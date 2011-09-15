@@ -1,0 +1,21 @@
+..Assembly/Project Heirarchy....
+
+1. Freetime.BaseFramework
+2. Freetime.Base.Data
+3. Freetime.Configuration
+4. Freetime.PluginManagement
+
+  Freetime.Data.Services
+  Freetime.Data.Services.Host
+
+5. Freetime.Base.Authentication
+6. Freetime.Base.GlobalHandling
+7. Freetime.Base.Business
+
+Web Specific
+8. Freetime.Web.Context
+9. Freetime.Web.Controller
+10. Freetime.Web.Routing
+11. Freetime.Web.View
+12. Freetime.Web
+

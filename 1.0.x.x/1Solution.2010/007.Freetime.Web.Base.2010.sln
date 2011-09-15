@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.Context", "001.Context", "{19EBAC8F-38EB-407E-879D-6F9D58B7E668}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Routing", "002.Routing", "{EEFB11D1-2FB5-45DE-948B-63AFF182DE72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003.View", "003.View", "{E9C6EFC7-8998-474D-B566-F61A1AEBE844}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "004.Controller", "004.Controller", "{4D16BC9D-EB6C-4E97-B2E8-3C219B318229}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "005.Unit.Test", "005.Unit.Test", "{1C0CDA05-34F3-4147-8444-85AB85C6A15B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Web.Routing", "..\Freetime.Web.Routing\Freetime.Web.Routing.csproj", "{FF73BEE2-10B9-4278-B5BF-24681B422A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Web.Controller", "..\Freetime.Web.Controller\Freetime.Web.Controller.csproj", "{B4821622-B647-4997-9EC0-D4E0BC77F5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Web.View", "..\Freetime.Web.View\Freetime.Web.View.csproj", "{CBFF08B3-E2A2-4B05-ABD0-3B208E4E3DF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Web.Context", "..\Freetime.Web.Context\Freetime.Web.Context.csproj", "{31BE1E39-657D-4522-9F1E-91EF5B249048}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF73BEE2-10B9-4278-B5BF-24681B422A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF73BEE2-10B9-4278-B5BF-24681B422A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF73BEE2-10B9-4278-B5BF-24681B422A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF73BEE2-10B9-4278-B5BF-24681B422A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4821622-B647-4997-9EC0-D4E0BC77F5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4821622-B647-4997-9EC0-D4E0BC77F5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4821622-B647-4997-9EC0-D4E0BC77F5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4821622-B647-4997-9EC0-D4E0BC77F5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBFF08B3-E2A2-4B05-ABD0-3B208E4E3DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFF08B3-E2A2-4B05-ABD0-3B208E4E3DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFF08B3-E2A2-4B05-ABD0-3B208E4E3DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFF08B3-E2A2-4B05-ABD0-3B208E4E3DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BE1E39-657D-4522-9F1E-91EF5B249048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BE1E39-657D-4522-9F1E-91EF5B249048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BE1E39-657D-4522-9F1E-91EF5B249048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BE1E39-657D-4522-9F1E-91EF5B249048}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31BE1E39-657D-4522-9F1E-91EF5B249048} = {19EBAC8F-38EB-407E-879D-6F9D58B7E668}
+		{FF73BEE2-10B9-4278-B5BF-24681B422A2B} = {EEFB11D1-2FB5-45DE-948B-63AFF182DE72}
+		{CBFF08B3-E2A2-4B05-ABD0-3B208E4E3DF4} = {E9C6EFC7-8998-474D-B566-F61A1AEBE844}
+		{B4821622-B647-4997-9EC0-D4E0BC77F5F4} = {4D16BC9D-EB6C-4E97-B2E8-3C219B318229}
+	EndGlobalSection
+EndGlobal

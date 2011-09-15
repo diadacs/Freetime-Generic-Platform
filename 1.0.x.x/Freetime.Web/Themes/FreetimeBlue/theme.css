@@ -1,0 +1,212 @@
+﻿body{
+  background : #024578;
+  font-family : Arial, Tahoma, Serif;
+}
+#wrapper{
+  width : 944px;
+  margin : auto;
+  height : auto;
+}
+
+/*TOP*/
+#top{
+  padding-bottom : 20px;
+}
+#theme-combo-container{
+  float : left;
+  margin-left : 40px;
+  padding-top : 10px;
+  width : 200px;
+}
+#theme-label
+{
+  float : left;	
+}
+#theme-combo-box
+{
+  float : left;
+  margin-left : 5px;	
+}
+/* LANGUAGE COMBO*/
+#language-combo-container{
+  float : right;
+  margin-right : 40px;
+  padding-top : 10px;
+}
+.outer-label{
+  color : #fff;
+  font-weight : bold;
+}
+/* END OF TOP */
+
+/*MAIN*/
+#main{
+ 
+}
+
+/* MAIN TOP */
+#main-top
+{
+ clear : both;
+  background : url('images/header-top-background.png') no-repeat;
+  height : 57px;
+  width : 944px; 
+}
+#login-navigation{
+  padding-top : 32px;
+  margin-right : 55px;
+  color : #024b82;
+  float : right;
+}
+#login-navigation a{
+  text-decoration : none;
+  color : #024b82;
+}
+
+/* MAIN HEADER */
+#main-header{
+  background : url('images/content-background.png') repeat-y scroll 0 0 transparent;
+  height : 100px; 
+}
+#site-logo-container{
+  padding-left : 40px;
+  float : left;
+}
+.main-logo{
+
+}
+
+#search-box{
+  clear : both;
+  float : right;
+  margin-right : 60px;
+}
+
+/*MAIN NAVIGATION & MENU */
+#main-nav{
+  background : url('images/content-background.png') repeat-y scroll 0 0 transparent;
+  height : 47px;
+}
+#main-menu{
+  margin-left : 33px;
+  width : 871px;
+  background : url('images/menu-background.jpg') repeat-x;
+  height : 47px;
+}
+#ulmenu{
+  font-family : arial;
+  font-size : 16px;
+  height : auto;
+  list-style : none outside none;
+  margin : 0;
+  padding : 0;
+  
+  text-align : left;
+  color : #fff;
+}
+#ulmenu li{
+  float : left;
+  padding-left : 20px;
+  padding-right : 20px;
+  height : 37px;
+  padding-top : 10px;
+  background : url('images/menu-separator.jpg') no-repeat right;
+}
+#ulmenu li:hover{
+  float : left;
+  padding-left : 20px;
+  padding-right : 20px;
+  height : 37px;
+  padding-top : 10px;
+  background : url('images/menu-separator.jpg') #024578 no-repeat right;
+}
+.menu-link{
+  color : #fff;
+  text-decoration : none;
+}
+
+/* MAIN CONTENT */
+#main-content{
+  background : url('images/content-background.png') repeat-y scroll 0 0 transparent;
+  float : left;
+  width : 944px; 
+  padding-top : 10px;
+  padding-bottom : 10px;
+  min-height : 500px;
+}
+#sidebar{
+  margin-left : 10px;
+  margin-right : 50px;
+  float : right;
+  width : 180px;
+}
+#content{
+  margin-left : 40px;
+  float : left;
+  width : 640px;
+}
+
+/* MAIN FOOTER */
+#main-footer{
+  clear : both;
+  background : url('images/footer-background.png');
+  height : 137px;
+}
+
+/* END OF MAIN */
+
+
+/* BOTTOM */
+#bottom{
+  margin : auto;
+  text-align : center;
+}
+.label-freetime-trademark{
+  color : #fff;
+  font-size : 10px;
+}
+
+/* LOGIN CONTROL */
+#divlc
+{
+  background : url('images/login-background.jpg') no-repeat;
+  width : 272px;
+  padding : 40px 10px 10px 10px;
+  height : 190px;  
+}
+.lclabel
+{
+  float : left;
+  width : 80px;
+  color : #000;
+  font-weight : bold;
+  font-size : 12px;
+}
+.lcspacer
+{
+  clear : both;
+  height : 15px;
+}
+.lccontrol
+{
+  float : left;
+  width : 170px;
+}
+.lcsubmit
+{
+  text-align : center;
+}
+.lcerr
+{
+  clear : both;
+  color : Red;
+  font-size : 12px;	
+}
+.lclabelremember
+{
+  font-size : 12px;
+}
+.login-text
+{
+  width : 160px;
+}

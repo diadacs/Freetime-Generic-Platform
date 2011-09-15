@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003.Plugin.Management", "003.Plugin.Management", "{7C57D791-54F9-4335-B212-F88D643C77AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "004.Unit.Test", "004.Unit.Test", "{09A93313-A6E3-49F5-B54C-42D8249C6AB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Data", "002.Data", "{F277E4F7-EFF9-4633-B450-4A49B23A0A2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.Framework", "001.Framework", "{9E516659-9DD1-475A-A893-9C8811940FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.PluginManagement", "..\Freetime.PluginManager\Freetime.PluginManagement.csproj", "{3F0BDDBD-CA2B-494E-B238-87C0F0968DA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Data", "..\Freetime.Base.Data\Freetime.Base.Data.csproj", "{1646344E-9015-4204-AF7B-0DF1D42B3E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Framework", "..\Freetime.Base.Framework\Freetime.Base.Framework.csproj", "{51773990-AB84-45E5-BFF2-50F0B422D380}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F0BDDBD-CA2B-494E-B238-87C0F0968DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0BDDBD-CA2B-494E-B238-87C0F0968DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0BDDBD-CA2B-494E-B238-87C0F0968DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0BDDBD-CA2B-494E-B238-87C0F0968DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51773990-AB84-45E5-BFF2-50F0B422D380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51773990-AB84-45E5-BFF2-50F0B422D380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51773990-AB84-45E5-BFF2-50F0B422D380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51773990-AB84-45E5-BFF2-50F0B422D380}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F0BDDBD-CA2B-494E-B238-87C0F0968DA0} = {7C57D791-54F9-4335-B212-F88D643C77AB}
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24} = {F277E4F7-EFF9-4633-B450-4A49B23A0A2F}
+		{51773990-AB84-45E5-BFF2-50F0B422D380} = {9E516659-9DD1-475A-A893-9C8811940FC8}
+	EndGlobalSection
+EndGlobal

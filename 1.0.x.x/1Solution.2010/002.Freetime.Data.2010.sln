@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Unit.Test", "002.Unit.Test", "{7BA80461-805D-4DB4-8D25-1873414489E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.Data", "001.Data", "{6B0FA059-AE87-434F-8ABE-D2AADAD52DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Data", "..\Freetime.Base.Data\Freetime.Base.Data.csproj", "{1646344E-9015-4204-AF7B-0DF1D42B3E24}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24} = {6B0FA059-AE87-434F-8ABE-D2AADAD52DCC}
+	EndGlobalSection
+EndGlobal

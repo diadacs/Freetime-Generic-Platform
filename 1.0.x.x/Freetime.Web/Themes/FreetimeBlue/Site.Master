@@ -1,0 +1,91 @@
+<%@ Master Language="C#" Inherits="Freetime.Web.View.BaseViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+    
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    
+</head>
+
+<body>
+<div id="wrapper">
+  <!-- TOP -->
+  <div id="top">
+    <div id="theme-combo-container">
+	  <span id="theme-label" class="outer-label">Theme</span>
+		<% using (Html.BeginForm("ChangeTheme", "Theme", FormMethod.Post, new { id = "formTheme" }))
+     { %>
+		<div id="theme-combo-box">
+		<%= Html.DropDownList("Theme"
+                        , new SelectList(Freetime.Base.Business.ThemeLogic.GetRegisteredThemes(), "Theme", "DisplayValue", Freetime.Web.Context.UserHandle.CurrentUser.DefaultTheme)
+            , new { onchange = "document.getElementById('formTheme').submit()" })%>
+		<%= Html.Hidden("ReturnUrl", Request.Url) %>
+		</div>
+		<%} %>
+		
+	</div>
+	<div id="language-combo-container">
+	  <span id="language-label" class="outer-label">Language</span>
+		<select>
+		  <option>English-United States</option>
+		  <option>English-United Kingdom</option>
+		</select>
+	</div>
+  </div>
+  
+  <!-- MAIN -->
+  <div id="Div1">
+  
+	  <div id="main-top">
+		<div id="login-navigation">
+			<% Html.RenderPartial("LogOnUserControl"); %>
+		</div>
+	  </div>
+	  
+	  <div id="main-header">
+	    <div id="site-logo-container">
+			<%= Html.ThemedImage("application-logo.png", new { @class = "main-logo", @id = "app-logo", @alt = "freetime logo" })%>	
+		</div>		
+		<div id="search-box">
+			Search <input type="text" size="40" /><button>Go</button>
+		</div>
+	  </div>
+	  
+	  <div id="main-nav">
+	    <div id="main-menu">
+			<ul id="ulmenu">
+				<li><%= Html.ActionLink("Home", "Index", "Root", null, new { @class = "menu-link"})%></li>
+				<li><%= Html.ActionLink("News", "Index", "Root", null, new { @class = "menu-link" })%></li>
+				<li><%= Html.ActionLink("Contact Us", "Index", "Root", null, new { @class = "menu-link" })%></li>
+			</ul>
+		</div>
+	  </div>
+	  
+	  <div id="main-content">
+		<div id="content">
+		  <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+		</div>
+		<div id="sidebar">
+		  <asp:ContentPlaceHolder ID="SideContent" runat="server" />
+		</div>
+		
+		
+	  </div>
+	  
+	  <div id="main-footer">
+	  
+	  </div>  
+	  
+  </div>
+  
+  <!-- BOTTOM -->
+  <div id="bottom">
+	<span class="label-freetime-trademark">Freetime Development Platform &copy; 2011</div>
+  </div>
+  
+</div> 
+   
+</body>
+</html>
