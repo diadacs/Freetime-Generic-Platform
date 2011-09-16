@@ -1,25 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Freetime.Base.Framework;
-using Freetime.Authentication;
-using Freetime.Base.Data.Entities;
+﻿using Freetime.Authentication;
 
 namespace Freetime.Base.Business.Implementable
 {
-    public interface IAuthenticationLogic<TUser> : ILogic
-        where TUser : UserAccount
+    public interface IAuthenticationLogic : ILogic
     {
-        FreetimeUser WebSignIn(string loginName,
+        bool SignInUser(string loginName,
+            string password);
+
+        bool SignInUser(string loginName,
             string password,
             string ipAddress);
 
-        CFreetimeUser WebSignIn<CFreetimeUser>(string loginName,
-            string password,
-            string ipAddress)
-            where CFreetimeUser : FreetimeUser, new();
+        bool SignInUser(string loginName,
+            string password, 
+            ref FreetimeUser user);
 
-        void WebSignOut(FreetimeUser user);
+        bool SignInUser(string loginName,
+            string password,
+            string ipAddress,
+            ref FreetimeUser user);
+        
+
+        void SignOutUser(FreetimeUser user);
     }
 }

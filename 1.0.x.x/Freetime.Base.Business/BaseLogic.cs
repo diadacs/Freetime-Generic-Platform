@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Linq.Expressions;
-using System.Collections.Generic;
 using Freetime.GlobalHandling;
 using Freetime.Authentication;
-using Freetime.Base.Data;
 using Freetime.Base.Data.Contracts;
-using Freetime.Configuration;
 using Freetime.Base.Business.Implementable;
 
 namespace Freetime.Base.Business
@@ -15,12 +11,12 @@ namespace Freetime.Base.Business
     {
         private TSession m_dataSession;
 
-        private TSession CurrentSession
+        protected TSession CurrentSession
         {
             get
             {
-                if (m_dataSession == null)
-                    m_dataSession = DataSessionBuilder.Current.GetDataSession<TSession>(GetDefaultSession());
+                if (Equals(m_dataSession, null))
+                    m_dataSession = DataSessionBuilder.Current.GetDataSession(GetDefaultSession());
                 return m_dataSession;
             }
         }
@@ -61,6 +57,7 @@ namespace Freetime.Base.Business
         public virtual void Dispose()
         {
             CurrentUser = null;
+            m_dataSession = default(TSession);
         }
     }
 }

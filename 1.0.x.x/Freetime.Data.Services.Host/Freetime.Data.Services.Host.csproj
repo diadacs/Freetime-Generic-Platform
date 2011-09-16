@@ -154,6 +154,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent>xcopy /I /Y "C:\Documents and Settings\Administrator\Desktop\freetime-platform\1.0.x.x\Freetime.Base.Data\DataServices.config" "$(ProjectDir)Config"</PreBuildEvent>
+    <PreBuildEvent>xcopy /I /Y "D:\TekWorc\Freetime-G-Business-Platform\1.0.x.x\Freetime.Base.Data\DataServices.config" "$(ProjectDir)Config"</PreBuildEvent>
   </PropertyGroup>
 </Project>
