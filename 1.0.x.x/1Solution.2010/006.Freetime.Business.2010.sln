@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Data", "..\Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Business", "..\Freetime.Base.Business\Freetime.Base.Business.csproj", "{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.Unit.Test", "900.Unit.Test", "{D6864C54-A5D3-404F-BE40-E04DD595B0B3}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True

@@ -7,15 +7,14 @@ namespace Freetime.Authentication
 {
     public static class PermissionSingleton
     {
-        private static Dictionary<string, PermissionCollection> m_userPermissions;
+        private static Dictionary<string, PermissionCollection> s_userPermissions;
 
         private static Dictionary<string, PermissionCollection> UserPermissions
         {
             get
             {
-                if (m_userPermissions == null)
-                    m_userPermissions = new Dictionary<string, PermissionCollection>();
-                return m_userPermissions;
+                s_userPermissions = s_userPermissions ?? new Dictionary<string, PermissionCollection>();
+                return s_userPermissions;
             }
         }
 

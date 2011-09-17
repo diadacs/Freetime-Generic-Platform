@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003.Unit.Test", "003.Unit.Test", "{7BA80461-805D-4DB4-8D25-1873414489E3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.Unit.Test", "900.Unit.Test", "{7BA80461-805D-4DB4-8D25-1873414489E3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.Data.Service", "001.Data.Service", "{7A252136-4954-4FEB-9B9E-EF1ED2F53B71}"
 EndProject

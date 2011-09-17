@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003.Unit.Test", "003.Unit.Test", "{7BA80461-805D-4DB4-8D25-1873414489E3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.Unit.Test", "900.Unit.Test", "{7BA80461-805D-4DB4-8D25-1873414489E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Data.Services.Host", "..\Freetime.Data.Services.Host\Freetime.Data.Services.Host.csproj", "{1E5C1C25-F1C6-4A32-A313-901254B772A4}"
 EndProject

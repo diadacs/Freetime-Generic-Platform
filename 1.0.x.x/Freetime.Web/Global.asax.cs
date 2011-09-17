@@ -46,7 +46,7 @@ namespace Freetime.Web
             //PluginLogic.PluginManager.LoadEventHandlers(eventConfig);
 
             //Load event handlers from an xml file
-            PluginLogic.PluginManager.LoadEventHandlers(@"C:\Documents and Settings\Administrator\Desktop\freetime\1.0.1.x\Freetime.Web\Config\Events.config");
+            //PluginLogic.PluginManager.LoadEventHandlers(@"C:\Documents and Settings\Administrator\Desktop\freetime\1.0.1.x\Freetime.Web\Config\Events.config");
 
             
             //Load Controllers from an xml file

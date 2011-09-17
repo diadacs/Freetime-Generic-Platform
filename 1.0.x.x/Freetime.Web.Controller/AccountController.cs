@@ -10,17 +10,17 @@ using System.Web.UI;
 using Freetime.Authentication;
 using Freetime.Base.Business;
 using Freetime.Base.Business.Implementable;
-using Freetime.Base.Data;
+using Freetime.Base.Data.Contracts;
 using Freetime.Base.Data.Entities;
 using Freetime.Web.Context;
 
 namespace Freetime.Web.Controller
 {
-    public class AccountController : BaseController<IAuthenticationLogic<UserAccount>>
+    public class AccountController : BaseController<IAuthenticationLogic>
     {
-        protected override IAuthenticationLogic<UserAccount> NewControllerLogic()
+        protected override IAuthenticationLogic NewControllerLogic()
         {
-            return new AuthenticationLogic<UserAccount>();
+            return new AuthenticationLogic();
         }
 
         public ActionResult Logon()
@@ -37,13 +37,12 @@ namespace Freetime.Web.Controller
             }
             if (!String.IsNullOrEmpty(returnUrl))
                 return Redirect(returnUrl);
-            else
-                return RedirectToAction("Index", "Root");  
+            return RedirectToAction("Index", "Root");  
         }
 
         public ActionResult Logoff()
         {
-            Logic.WebSignOut(CurrentUser);
+            Logic.SignOutUser(CurrentUser);
             string theme = UserHandle.CurrentUser.DefaultTheme;
             SetCurrentUser(null);
             UserHandle.CurrentUser.DefaultTheme = theme;
@@ -66,10 +65,12 @@ namespace Freetime.Web.Controller
                 ModelState.AddModelError("password", "You must specify a password.");
             }
 
-            FreetimeUser user = Logic.WebSignIn<FreetimeUser>(userName, password, "");
+            FreetimeUser user = null;
+            bool isAuthorized = Logic.SignInUser(userName, password, "", ref user);
 
             SetCurrentUser(user);
-            return ModelState.IsValid;
+            return isAuthorized;
+            //return ModelState.IsValid;
         }
 
         private void SetCurrentUser(FreetimeUser user)

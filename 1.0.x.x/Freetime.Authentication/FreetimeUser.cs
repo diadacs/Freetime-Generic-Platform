@@ -1,22 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Freetime.Base.Data;
-using Freetime.Base.Data.Entities;
-using Freetime.Base.Framework;
-using Freetime.Configuration;
+﻿using System.Runtime.Serialization;
+
 
 namespace Freetime.Authentication
 {
+    [DataContract]
     public class FreetimeUser
     {
         private string m_defaultTheme = string.Empty;
-        private int m_userId = default(int);
-        private int m_userRole = default(int);
-        private bool m_isAuthorized = default(bool);
-        private string m_name = string.Empty;
+        private readonly int m_userId = default(int);
+        private readonly int m_userRole = default(int);
+        private readonly bool m_isAuthorized = default(bool);
+        private readonly string m_name = string.Empty;
 
+        [DataMember]
         public string DefaultTheme
         {
             get
@@ -29,22 +25,25 @@ namespace Freetime.Authentication
             }
         }
         
-        public FreetimeUser(UserAccount userAccount, bool isAuthorized)
+        public FreetimeUser(int userId, 
+            int userRole,
+            string name,
+            bool isAuthorized,
+            string theme)
             : this()
         {
-            m_userId = userAccount.ID;
-            m_userRole = userAccount.UserRole;
+            m_userId = userId;
+            m_userRole = userRole;
+            m_name = name;
             m_isAuthorized = isAuthorized;
-            if(!string.IsNullOrEmpty(userAccount.Theme))
-                m_defaultTheme = userAccount.Theme;
-            m_name = userAccount.Name;
+            DefaultTheme = theme;
         }
 
         public FreetimeUser()
         {
-            m_defaultTheme = ConfigurationManager.FreetimeConfig.DefaultTheme;
         }
 
+        [DataMember]
         public int UserId
         {
             get
@@ -53,6 +52,7 @@ namespace Freetime.Authentication
             }
         }
 
+        [DataMember]
         public int UserRole
         {
             get
@@ -61,6 +61,7 @@ namespace Freetime.Authentication
             }
         }
 
+        [DataMember]
         public bool IsAuthorized
         {
             get
@@ -69,11 +70,7 @@ namespace Freetime.Authentication
             }
         }
 
-        public bool IsPermitted(string permissionCode)
-        {
-            return default(bool);
-        }
-
+        [DataMember]
         public string Name
         {
             get
@@ -81,8 +78,6 @@ namespace Freetime.Authentication
                 return m_name;
             }
         }
-
-
 
     }
 }

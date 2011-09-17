@@ -58,6 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Assemblies\Anito.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Freetime.Authentication, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL" />
+    <Reference Include="Freetime.Base.Framework, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL" />
     <Reference Include="System">
       <Private>True</Private>
     </Reference>
@@ -116,7 +118,7 @@
     <Compile Include="Entities\IAuditable.cs" />
     <Compile Include="Contracts\IDataSession.cs" />
     <Compile Include="Entities\IPublishable.cs" />
-    <Compile Include="IThemeDataSession.cs" />
+    <Compile Include="Contracts\IThemeDataSession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Common\PublishableEntity.cs" />
     <Compile Include="StoredProcedure.cs" />

@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003.View", "003.View", "{E9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "004.Controller", "004.Controller", "{4D16BC9D-EB6C-4E97-B2E8-3C219B318229}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "005.Unit.Test", "005.Unit.Test", "{1C0CDA05-34F3-4147-8444-85AB85C6A15B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.Unit.Test", "900.Unit.Test", "{1C0CDA05-34F3-4147-8444-85AB85C6A15B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Web.Routing", "..\Freetime.Web.Routing\Freetime.Web.Routing.csproj", "{FF73BEE2-10B9-4278-B5BF-24681B422A2B}"
 EndProject

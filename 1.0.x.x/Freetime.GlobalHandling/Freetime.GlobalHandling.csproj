@@ -92,10 +92,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Freetime.Authentication\Freetime.Authentication.csproj">
-      <Project>{44679E46-FD36-408B-92CE-D927840C5980}</Project>
-      <Name>Freetime.Authentication</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Freetime.Configuration\Freetime.Configuration.csproj">
       <Project>{19DD2A49-451B-4300-BBA3-D3EE94C4104E}</Project>
       <Name>Freetime.Configuration</Name>

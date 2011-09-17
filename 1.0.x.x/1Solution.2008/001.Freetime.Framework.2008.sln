@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Framework", "..\Freetime.Base.Framework\Freetime.Base.Framework.csproj", "{51773990-AB84-45E5-BFF2-50F0B422D380}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Unit.Test", "002.Unit.Test", "{7BA80461-805D-4DB4-8D25-1873414489E3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.Unit.Test", "900.Unit.Test", "{7BA80461-805D-4DB4-8D25-1873414489E3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.Framework", "001.Framework", "{0109FA43-F7FA-4E54-B14F-F43FA13C0059}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Authentication", "002.Authentication", "{7DD689D2-6498-4010-9940-12744D32E9B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Authentication", "..\Freetime.Authentication\Freetime.Authentication.csproj", "{44679E46-FD36-408B-92CE-D927840C5980}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -21,11 +25,16 @@ Global
 		{51773990-AB84-45E5-BFF2-50F0B422D380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51773990-AB84-45E5-BFF2-50F0B422D380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51773990-AB84-45E5-BFF2-50F0B422D380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44679E46-FD36-408B-92CE-D927840C5980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44679E46-FD36-408B-92CE-D927840C5980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44679E46-FD36-408B-92CE-D927840C5980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44679E46-FD36-408B-92CE-D927840C5980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{51773990-AB84-45E5-BFF2-50F0B422D380} = {0109FA43-F7FA-4E54-B14F-F43FA13C0059}
+		{44679E46-FD36-408B-92CE-D927840C5980} = {7DD689D2-6498-4010-9940-12744D32E9B0}
 	EndGlobalSection
 EndGlobal

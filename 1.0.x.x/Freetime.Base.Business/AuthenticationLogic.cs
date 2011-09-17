@@ -84,7 +84,15 @@ namespace Freetime.Base.Business
             }
 
             args = new UserAuthenticationEventArgs(string.Empty); //TODO Supply Localized Message
-            var user = new FreetimeUser(account, true);
+            var user = new FreetimeUser(
+                account.ID,
+                account.UserRole,
+                account.Name,
+                true,
+                account.Theme
+                );
+                              
+                           
             RaiseEvent(GlobalEventConstants.AUTHENTICATION_LOGIN_SUCCESS, args);
             return user;
         }

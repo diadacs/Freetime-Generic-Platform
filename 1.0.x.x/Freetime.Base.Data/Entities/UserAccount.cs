@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Anito.Data;
-using Anito.Data.Mapping;
+﻿using Anito.Data.Mapping;
 using Freetime.Base.Data.Entities.Common;
 using System.Runtime.Serialization;
-using System.ServiceModel;
 
 namespace Freetime.Base.Data.Entities
 {
