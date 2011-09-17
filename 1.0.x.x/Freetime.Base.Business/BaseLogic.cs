@@ -16,7 +16,10 @@ namespace Freetime.Base.Business
             get
             {
                 if (Equals(m_dataSession, null))
+                {
                     m_dataSession = DataSessionBuilder.Current.GetDataSession(GetDefaultSession());
+                    m_dataSession.SetFreetimeUser(CurrentUser);
+                }
                 return m_dataSession;
             }
         }
