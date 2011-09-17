@@ -103,7 +103,6 @@
     <Compile Include="Entities\AssemblyDependency.cs" />
     <Compile Include="Entities\DataSessionService.cs" />
     <Compile Include="Entities\EventHandler.cs" />
-    <Compile Include="Entities\GeneratedDocumentCode.cs" />
     <Compile Include="Entities\UserAccount.cs" />
     <Compile Include="Entities\UserRole.cs" />
     <Compile Include="Entities\WebController.cs" />

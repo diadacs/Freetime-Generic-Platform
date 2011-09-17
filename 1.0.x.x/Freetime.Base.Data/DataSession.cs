@@ -1,5 +1,4 @@
 ﻿using Anito.Data;
-using Freetime.Base.Data.Functions;
 using Freetime.Base.Data.Contracts;
 
 namespace Freetime.Base.Data
@@ -23,15 +22,6 @@ namespace Freetime.Base.Data
             var provider = ProviderFactory.GetProvider();
             var session = ProviderFactory.GetSession(provider);
             return session;
-        }
-
-        public virtual string GetDocumentCode(string transaction)
-        {
-            var generatedDocCode = CurrentSession.GetT<Entities.GeneratedDocumentCode>(Procedures.GenerateDocumentCode(transaction).Procedure);
-            
-            return (!generatedDocCode.IsSuffix) ?
-                string.Format("{0}{1}{2}", generatedDocCode.Extension, generatedDocCode.Separator, generatedDocCode.Count)
-                    : string.Format("{0}{1}{2}", generatedDocCode.Count, generatedDocCode.Separator, generatedDocCode.Extension);
         }
 
         public virtual void Dispose()
