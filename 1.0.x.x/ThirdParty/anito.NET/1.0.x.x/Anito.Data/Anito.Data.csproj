@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07023B06-1BBD-45C6-BD01-AECEB7C85CFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Anito.Data</RootNamespace>
+    <AssemblyName>Anito.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>anito.NET.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AdoCommandBase.cs" />
+    <Compile Include="Common\AdoCommandBuilderBase.cs" />
+    <Compile Include="Common\AdoCommandExecutorBase.cs" />
+    <Compile Include="Common\AdoCommandParameterBase.cs" />
+    <Compile Include="Common\AdoTransactionBase.cs" />
+    <Compile Include="Common\AdoTranslatorBase.cs" />
+    <Compile Include="Configuration\ProviderConfiguration.cs" />
+    <Compile Include="Configuration\ProviderConfigurationElement.cs" />
+    <Compile Include="Configuration\ProviderConfigurationElementCollection.cs" />
+    <Compile Include="Configuration\SchemaSourceCollection.cs" />
+    <Compile Include="Configuration\SchemaSourceElement.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DataObjectRef.cs" />
+    <Compile Include="DataObjectSet.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="Exceptions\DuplicateConfigurationException.cs" />
+    <Compile Include="Exceptions\ProviderNotFoundException.cs" />
+    <Compile Include="IColumn.cs" />
+    <Compile Include="ICommandExecutor.cs" />
+    <Compile Include="IDatabase.cs" />
+    <Compile Include="ISingleChild.cs" />
+    <Compile Include="ProviderBase.cs" />
+    <Compile Include="Query\IQuery.cs" />
+    <Compile Include="ISessionContianer.cs" />
+    <Compile Include="ITable.cs" />
+    <Compile Include="Mapping\DataField.cs" />
+    <Compile Include="Attributes\DataObjectDefault.cs" />
+    <Compile Include="Mapping\Enum.cs" />
+    <Compile Include="Mapping\Association.cs" />
+    <Compile Include="Mapping\Source.cs" />
+    <Compile Include="DataBindingList.cs" />
+    <Compile Include="DataObject.cs" />
+    <Compile Include="DataSession.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Events\DataObjectAfterDeleteEventArgs.cs" />
+    <Compile Include="Events\DataObjectAfterSaveArgs.cs" />
+    <Compile Include="Events\DataObjectOnDeleteEventArgs.cs" />
+    <Compile Include="Events\DataObjectOnSaveEventArgs.cs" />
+    <Compile Include="Events\Delegates.cs" />
+    <Compile Include="Events\FieldValueChangedEventArgs.cs" />
+    <Compile Include="Events\FieldValueChangingEventArgs.cs" />
+    <Compile Include="Exceptions\SessionNotInstantiatedException.cs" />
+    <Compile Include="Exceptions\TransactionNotInstantiatedException.cs" />
+    <Compile Include="Exceptions\TypeNoKeyException.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="ICommandBuilder.cs" />
+    <Compile Include="IDataList.cs" />
+    <Compile Include="IDataObject.cs" />
+    <Compile Include="IProcedure.cs" />
+    <Compile Include="ISession.cs" />
+    <Compile Include="IFilterCriteria.cs" />
+    <Compile Include="IMapper.cs" />
+    <Compile Include="ICommandParameter.cs" />
+    <Compile Include="IProvider.cs" />
+    <Compile Include="ITransaction.cs" />
+    <Compile Include="Query\ISelect.cs" />
+    <Compile Include="Query\Select.cs" />
+    <Compile Include="Schema\CacheManager.cs" />
+    <Compile Include="Schema\TypeRelation.cs" />
+    <Compile Include="Schema\TypeSchemaSource.cs" />
+    <Compile Include="Serialization\SchemaSerializer.cs" />
+    <Compile Include="SessionContainer.cs" />
+    <Compile Include="Util\Misc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParameterCollection.cs" />
+    <Compile Include="Procedure.cs" />
+    <Compile Include="ProcedureParameter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProviderFactory.cs" />
+    <Compile Include="Schema\TypeColumn.cs" />
+    <Compile Include="Schema\TypeId.cs" />
+    <Compile Include="Schema\TypeKey.cs" />
+    <Compile Include="Schema\TypeTable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="anito.NET.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Linq\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
