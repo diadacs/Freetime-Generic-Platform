@@ -18,7 +18,7 @@ namespace Freetime.Base.Data
             }
         }
 
-        private FreetimeUser CurrentUser { get; set;}
+        protected FreetimeUser CurrentUser { get; set;}
 
         private static ISession GetDefaultSession()
         {
