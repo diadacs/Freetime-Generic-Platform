@@ -11,7 +11,7 @@ namespace Freetime.Base.Business
     {
         private TSession m_dataSession;
 
-        protected TSession CurrentSession
+        protected virtual TSession CurrentSession
         {
             get
             {
