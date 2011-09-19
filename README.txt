@@ -1,4 +1,4 @@
-Freetime Development Platform © tekworcs 2011
+Freetime Development Platform © TekWorc 2011
 
 Branch       Version            Description
 --------------------------------------------------------
