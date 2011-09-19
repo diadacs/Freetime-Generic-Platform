@@ -10,3 +10,6 @@ The solution files under the said folders are numbered in this format "00#.Solut
 e.g. : 001.Freetime.Framework
 
 To run the source build it from the lowest number to the highest.
+
+
+Freetime Development Platform © TekWorc 2011
