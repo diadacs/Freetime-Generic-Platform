@@ -17,14 +17,14 @@ namespace Freetime.Base.Business
             {
                 if (Equals(m_dataSession, null))
                 {
-                    m_dataSession = DataSessionBuilder.Current.GetDataSession(GetDefaultSession());
+                    m_dataSession = DataSessionBuilder.Current.GetDataSession(DefaultSession);
                     m_dataSession.SetFreetimeUser(CurrentUser);
                 }
                 return m_dataSession;
             }
         }
 
-        protected abstract TSession GetDefaultSession();
+        protected abstract TSession DefaultSession { get; }
 
         public virtual FreetimeUser CurrentUser { get; private set; }
 

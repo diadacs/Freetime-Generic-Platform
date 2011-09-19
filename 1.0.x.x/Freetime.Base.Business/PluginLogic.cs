@@ -22,9 +22,9 @@ namespace Freetime.Base.Business
         private WebControllerList m_controllerList = null;        
         #endregion
 
-        protected override IDataSession GetDefaultSession()
+        protected override IDataSession DefaultSession
         {
-            throw new NotImplementedException();
+            get { throw new NotImplementedException(); }
         }
 
         #region EventHandling

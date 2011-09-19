@@ -12,9 +12,9 @@ namespace Freetime.Base.Business
 {
     public class ThemeLogic : BaseLogic<IDataSession>, IThemeLogic
     {
-        protected override IDataSession GetDefaultSession()
+        protected override IDataSession DefaultSession
         {
-            throw new NotImplementedException();
+            get { throw new NotImplementedException(); }
         }
 
         public static WebThemeList GetRegisteredThemes()

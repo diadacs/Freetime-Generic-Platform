@@ -11,9 +11,10 @@ namespace Freetime.Base.Business
 {
     public class LocalizationLogic : BaseLogic<IDataSession>, ILocalizationLogic
     {
-        protected override IDataSession GetDefaultSession()
+        protected override IDataSession DefaultSession
         {
-            throw new NotImplementedException();
+            get{ throw new NotImplementedException(); }
+            
         }
     }
 }

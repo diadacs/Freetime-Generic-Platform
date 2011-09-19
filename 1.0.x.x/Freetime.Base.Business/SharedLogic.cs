@@ -10,9 +10,10 @@ namespace Freetime.Base.Business
 {
     public class SharedLogic : BaseLogic<IDataSession>, ISharedLogic
     {
-        protected override IDataSession GetDefaultSession()
+        protected override IDataSession DefaultSession
         {
-            throw new NotImplementedException();
+            get { throw new NotImplementedException(); }
+            
         }
     }
 }

@@ -10,11 +10,17 @@ namespace Freetime.Base.Business
 {
     public class AuthenticationLogic: BaseLogic<IAuthenticationSession>, IAuthenticationLogic
     {
-        protected override IAuthenticationSession GetDefaultSession()
-        {
-            return new AuthenticationSession();
-        }
+        private AuthenticationSession m_authenticationSession;
 
+        protected override IAuthenticationSession DefaultSession
+        {
+            get
+            {
+                m_authenticationSession = m_authenticationSession ?? new AuthenticationSession();
+                return m_authenticationSession;
+            }
+
+        }
         public bool SignInUser(string loginName,
             string password)
         {
