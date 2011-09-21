@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.Unit.Test", "900.Unit.Test", "{7BA80461-805D-4DB4-8D25-1873414489E3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.Data.Service", "001.Data.Service", "{7A252136-4954-4FEB-9B9E-EF1ED2F53B71}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Data.Service", "002.Data.Service", "{7A252136-4954-4FEB-9B9E-EF1ED2F53B71}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Service.Host", "002.Service.Host", "{01FEEDA6-A2F6-4305-A8BF-E83F50579BE9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003.Service.Host", "003.Service.Host", "{01FEEDA6-A2F6-4305-A8BF-E83F50579BE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Data.Services.Host", "..\Freetime.Data.Services.Host\Freetime.Data.Services.Host.csproj", "{1E5C1C25-F1C6-4A32-A313-901254B772A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Data.Services", "..\Freetime.Data.Services\Freetime.Data.Services.csproj", "{7FE45FF9-F800-4475-9BEB-A7C4A0410903}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.Data", "001.Data", "{730AF711-50F2-4BD6-B233-ECA231A73C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Data", "..\Freetime.Base.Data\Freetime.Base.Data.csproj", "{1646344E-9015-4204-AF7B-0DF1D42B3E24}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -29,6 +33,10 @@ Global
 		{7FE45FF9-F800-4475-9BEB-A7C4A0410903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FE45FF9-F800-4475-9BEB-A7C4A0410903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FE45FF9-F800-4475-9BEB-A7C4A0410903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +44,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7FE45FF9-F800-4475-9BEB-A7C4A0410903} = {7A252136-4954-4FEB-9B9E-EF1ED2F53B71}
 		{1E5C1C25-F1C6-4A32-A313-901254B772A4} = {01FEEDA6-A2F6-4305-A8BF-E83F50579BE9}
+		{1646344E-9015-4204-AF7B-0DF1D42B3E24} = {730AF711-50F2-4BD6-B233-ECA231A73C81}
 	EndGlobalSection
 EndGlobal

@@ -101,10 +101,9 @@
     <Compile Include="Collection\WebThemeList.cs" />
     <Compile Include="Collection\WebViewList.cs" />
     <Compile Include="DataSession.cs" />
-    <Compile Include="Entities\Assembly.cs" />
-    <Compile Include="Entities\AssemblyDependency.cs" />
     <Compile Include="Entities\DataSessionService.cs" />
     <Compile Include="Entities\EventHandler.cs" />
+    <Compile Include="Entities\IDeletable.cs" />
     <Compile Include="Entities\UserAccount.cs" />
     <Compile Include="Entities\UserRole.cs" />
     <Compile Include="Entities\WebController.cs" />

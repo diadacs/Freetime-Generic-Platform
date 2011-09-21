@@ -1,21 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
 using System.Xml.Serialization;
-using Anito.Data.Mapping;
-using Anito.Data;
+using System.Runtime.Serialization;
 
 namespace Freetime.Base.Data.Entities.Common
 {
     [Serializable]
+    [DataContract]
     public class PublishableEntity : AuditableEntity, IPublishable
     {
-        public PublishableEntity()
-            : base()
-        { }
-
+        
         public void Publish()
         {
             IsPublished = true;
@@ -28,16 +21,16 @@ namespace Freetime.Base.Data.Entities.Common
             DatePublished = null;
         }
 
-        [XmlElementAttribute("IsPublished")]
-        [DataField(FieldName = "IsPublished")]
+        [XmlElement("IsPublished")]
+        [DataMember]
         public bool IsPublished
         {
             get;
             private set;
         }
 
-        [XmlElementAttribute("DatePublished")]
-        [DataField(FieldName = "DatePublished")]
+        [XmlElement("DatePublished")]
+        [DataMember]
         public DateTime? DatePublished
         {
             get;

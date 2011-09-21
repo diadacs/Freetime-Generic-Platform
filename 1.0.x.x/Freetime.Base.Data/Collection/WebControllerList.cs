@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
 using System.Xml.Serialization;
-
+using System.Runtime.Serialization;
 namespace Freetime.Base.Data.Collection
 {
     [Serializable]
+    [DataContract]
     [XmlRoot("Controllers",
-        Namespace = "http://www.freetime-businessplatform.com",
-        IsNullable = false)]
+        Namespace = "http://www.freeG-businessplatform.com",
+        IsNullable = true)]
     public class WebControllerList : List<Entities.WebController>
     {        
     }

@@ -10,10 +10,7 @@ namespace Freetime.Base.Data.Entities
 {
     public class UserRole : AuditableEntity
     {
-        
-        public UserRole()
-        {
-        }
+ 
 
         //private int _ID;
 

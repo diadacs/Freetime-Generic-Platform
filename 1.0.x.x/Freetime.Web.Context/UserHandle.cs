@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web;
+﻿using System.Web;
 using Freetime.Authentication;
+using Freetime.Configuration;
 
 namespace Freetime.Web.Context
 {
@@ -13,21 +10,25 @@ namespace Freetime.Web.Context
 
         public static void SetCurrentFreetimeUser(FreetimeUser user)
         {
-            System.Web.HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] = user;
+            HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] = user;
         }
 
         public static void KillCurrentFreetimeUser()
         {
-            System.Web.HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] = null;
+            HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] = null;
         }
 
         public static FreetimeUser CurrentUser
         { 
             get
             {
-                if (System.Web.HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] == null)
-                    System.Web.HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] = new FreetimeUser();
-                return System.Web.HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] as FreetimeUser;       
+                if (HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] == null)
+                {
+                    var freetimeUser = new FreetimeUser();
+                    freetimeUser.DefaultTheme = ConfigurationManager.FreetimeConfig.DefaultTheme;
+                    HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] = freetimeUser;
+                }
+                return HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] as FreetimeUser;       
             }
         }
     }

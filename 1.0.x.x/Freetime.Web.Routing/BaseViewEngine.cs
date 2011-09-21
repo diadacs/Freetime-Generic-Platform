@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Web.Mvc;
-using System.Globalization;
 using Freetime.Web.Context;
 using Freetime.Configuration;
 
 namespace Freetime.Web.Routing
 {
-    public abstract class BaseViewEngine : System.Web.Mvc.WebFormViewEngine
+    public abstract class BaseViewEngine : WebFormViewEngine
     {
         protected BaseViewEngine()
         {

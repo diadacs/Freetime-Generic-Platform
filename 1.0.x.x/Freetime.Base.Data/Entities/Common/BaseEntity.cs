@@ -1,36 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
 using System.Xml.Serialization;
-using Anito.Data.Mapping;
-using Anito.Data;
+using System.Runtime.Serialization;
 
 namespace Freetime.Base.Data.Entities.Common
 {
     [Serializable]
+    [DataContract]
     public abstract class BaseEntity : IDisposable
-    {        
+    {
 
-        protected BaseEntity()
-        { }
-
-        private readonly int? _ID = null;
-
-        [XmlElementAttribute("ID")]
-        [DataField(FieldName = "ID", Identity = true)]
-        public virtual int? ID
+        [DataMember]
+        [XmlElement("ID")]
+        public virtual Int64 ID
         {
-            get
-            {
-                return _ID;
-            }
+            get;
+            protected set;
         }
 
         public virtual void Dispose()
         {
         }
-        
+
     }
 }

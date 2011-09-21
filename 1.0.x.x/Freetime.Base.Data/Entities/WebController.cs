@@ -1,36 +1,39 @@
 ﻿using System;
 using System.Xml.Serialization;
-using Anito.Data.Mapping;
-using Freetime.Base.Data.Entities.Common;
+using System.Runtime.Serialization;
 
 namespace Freetime.Base.Data.Entities
 {           
     [Serializable]
-    public class WebController : BaseEntity
+    [DataContract]
+    [XmlRoot("WebController",
+        Namespace = "http://www.freeG-businessplatform.com",
+        IsNullable = true)]
+    public class WebController
     {
         public WebController()
         {
             IsActive = true;
         }
 
-        [XmlElementAttribute("Name")]
-        [DataField(FieldName = "Name")]
+        [DataMember]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
-        [XmlElementAttribute("ControllerType")]
-        [DataField(FieldName = "ControllerType")]
+        [DataMember]
+        [XmlElement("ControllerType")]
         public string ControllerType { get; set; }
 
-        [XmlElementAttribute("Assembly")]
-        [DataField(FieldName = "Assembly")]
+        [DataMember]
+        [XmlElement("Assembly")]
         public string Assembly { get; set; }
 
-        [XmlElementAttribute("AssemblyLocation")]
-        [DataField(FieldName = "AssemblyLocation")]
+        [DataMember]
+        [XmlElement("AssemblyLocation")]
         public string AssemblyLocation { get; set; }
 
-        [XmlElementAttribute("IsActive")]
-        [DataField(FieldName = "IsActive")]
+        [DataMember]
+        [XmlElement("IsActive")]
         public bool IsActive { get; set; }
     }
 }

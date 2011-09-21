@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using Freetime.Authentication;
 using Freetime.Base.Data;
 using Freetime.Base.Data.Contracts;
@@ -76,7 +77,7 @@ namespace Freetime.Base.Business
             var encoder = new UTF8Encoding();
             var encryptedPassword = Crypto.Md5CryptoServiceProvider.ComputeHash(encoder.GetBytes(password));
 
-            if (account.Password != encryptedPassword.ToString())
+            if (account.Password != Convert.ToBase64String(encryptedPassword))
             {
                 args = new UserAuthenticationEventArgs(string.Empty) //TODO Supply Localized Message
                            {
@@ -91,11 +92,11 @@ namespace Freetime.Base.Business
 
             args = new UserAuthenticationEventArgs(string.Empty); //TODO Supply Localized Message
             var user = new FreetimeUser(
-                account.ID,
+                (int) account.ID,
                 account.UserRole,
                 account.Name,
                 true,
-                account.Theme
+                "FreetimeBlue"
                 );
                               
                            

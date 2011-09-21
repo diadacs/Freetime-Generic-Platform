@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <ProjectGuid>{6CF5CABE-D09C-4158-8319-04EFE5DA4687}</ProjectGuid>
-	<SignAssembly>true</SignAssembly>
+    <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>tekworc.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,27 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Anito.Data, Version=1.0.1.5, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Anito.Data, Version=1.0.1.7, Culture=neutral, PublicKeyToken=967ed64547aa0488, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Assemblies\Anito.Data.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="Anito.Data.SqlClient, Version=1.0.1.5, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Anito.Data.SqlClient, Version=1.0.1.7, Culture=neutral, PublicKeyToken=967ed64547aa0488, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Assemblies\Anito.Data.SqlClient.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Freetime.Authentication, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\Debug\Freetime.Authentication.dll</HintPath>
-    </Reference>
-    <Reference Include="Freetime.Base.Business, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\Freetime.Base.Business.dll</HintPath>
-    </Reference>
-    <Reference Include="Freetime.Base.Data, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\Freetime.Base.Data.dll</HintPath>
     </Reference>
     <Reference Include="Freetime.Base.Framework, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -67,21 +57,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\Debug\Freetime.GlobalHandling.dll</HintPath>
     </Reference>
-    <Reference Include="Freetime.Plugin.EventHandling, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\Freetime.Plugin.EventHandling.dll</HintPath>
-    </Reference>
-    <Reference Include="Freetime.PluginManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\Freetime.PluginManagement.dll</HintPath>
-    </Reference>
     <Reference Include="Freetime.Web.Context, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\Debug\Freetime.Web.Context.dll</HintPath>
-    </Reference>
-    <Reference Include="Freetime.Web.Controller, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\Freetime.Web.Controller.dll</HintPath>
     </Reference>
     <Reference Include="Freetime.Web.Routing, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -252,6 +230,20 @@
     <Content Include="Themes\BlackTabs\Site.Master" />
     <Content Include="Themes\FreetimeBlue\images\hayley.jpg" />
     <Content Include="Themes\FreetimeBlue\images\login-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Freetime.Base.Business\Freetime.Base.Business.csproj">
+      <Project>{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1}</Project>
+      <Name>Freetime.Base.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Freetime.Base.Data\Freetime.Base.Data.csproj">
+      <Project>{1646344E-9015-4204-AF7B-0DF1D42B3E24}</Project>
+      <Name>Freetime.Base.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Freetime.Web.Controller\Freetime.Web.Controller.csproj">
+      <Project>{B4821622-B647-4997-9EC0-D4E0BC77F5F4}</Project>
+      <Name>Freetime.Web.Controller</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\" />

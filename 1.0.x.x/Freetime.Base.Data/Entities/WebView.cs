@@ -1,39 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
 using System.Xml.Serialization;
-using Anito.Data.Mapping;
-using Anito.Data;
-using Freetime.Base.Data.Entities.Common;
+using System.Runtime.Serialization;
 
 namespace Freetime.Base.Data.Entities
 {
     [Serializable]
-    public class WebView : AuditableEntity
+    [DataContract]
+    [XmlRoot("WebView",
+        Namespace = "http://www.freeG-businessplatform.com",
+        IsNullable = true)]
+    public class WebView 
     {
         
         public WebView()
-            : base()
         {
             IsActive = true;
         }
 
-        [XmlElementAttribute("Name")]
-        [DataField(FieldName = "Name")]
+        [DataMember]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
-        [XmlElementAttribute("File")]
-        [DataField(FieldName = "File")]
+        [DataMember]
+        [XmlElement("File")]
         public string File { get; set; }
 
-        [XmlElementAttribute("IsThemed")]
-        [DataField(FieldName = "IsThemed")]
+        [DataMember]
+        [XmlElement("IsThemed")]
         public bool IsThemed { get; set; }
 
-        [XmlElementAttribute("IsActive")]
-        [DataField(FieldName = "IsActive")]
+        [DataMember]
+        [XmlElement("IsActive")]
         public bool IsActive { get; set; }
     }
 }

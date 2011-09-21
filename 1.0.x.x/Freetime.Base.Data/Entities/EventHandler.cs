@@ -1,44 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
 using System.Xml.Serialization;
-using Anito.Data.Mapping;
 using Freetime.Base.Data.Entities.Common;
+using System.Runtime.Serialization;
 
 namespace Freetime.Base.Data.Entities
 {
     [Serializable]
+    [DataContract]
+    [XmlRoot("EventHandler",
+        Namespace = "http://www.freeG-businessplatform.com",
+        IsNullable = true)]
     public class EventHandler : AuditableEntity
     {
-        public EventHandler()
-            : base()
-        { }
+        [DataMember]
+        [XmlElement("UniqueId")]
+        public string UniqueId { get; set; }
 
-        [XmlElementAttribute("UniqueId")]
-        [DataField(FieldName = "UniqeID"
-            , PrimaryKey = true)]
-        public string UniqueID { get; set; }
-
-        [XmlElementAttribute("Name")]
-        [DataField(FieldName = "Name")]
+        [DataMember]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
-        [XmlElementAttribute("EventHandlerClass")]
-        [DataField(FieldName = "EventHandlerClass")]
+        [DataMember]
+        [XmlElement("EventHandlerClass")]
         public string EventHandlerClass { get; set; }
 
-        [XmlElementAttribute("Assembly")]
-        [DataField(FieldName = "Assembly")]
+        [DataMember]
+        [XmlElement("Assembly")]
         public string Assembly { get; set; }
 
-        [XmlElementAttribute("AssemblyLocation")]
-        [DataField(FieldName = "AssemblyLocation")]
+        [DataMember]
+        [XmlElement("AssemblyLocation")]
         public string AssemblyLocation { get; set; }
 
-        [XmlElementAttribute("IsActive")]
-        [DataField(FieldName = "IsActive")]
+        [DataMember]
+        [XmlElement("IsActive")]
         public bool IsActive { get; set; }
 
     }

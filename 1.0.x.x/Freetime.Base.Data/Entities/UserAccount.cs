@@ -1,57 +1,47 @@
-﻿using Anito.Data.Mapping;
-using Freetime.Base.Data.Entities.Common;
+﻿using System;
+using System.Xml.Serialization;
 using System.Runtime.Serialization;
+using Freetime.Base.Data.Entities.Common;
 
 namespace Freetime.Base.Data.Entities
 {
-
     [DataContract]
-    [Source(View = "UserAccountView",
-        Update = "UserAccount")]
+    [Serializable]
+    [XmlRoot("UserAccount",
+        Namespace = "http://www.freeG-businessplatform.com",
+        IsNullable = true)]
     public class UserAccount : AuditableEntity
     {
-
         [DataMember]
-        [DataField(FieldName = "ID"
-            , MemberName = "_ID"
-            , Identity = true
-            , PrimaryKey = true
-            )]
-        public virtual int ID { get; private set; }
-
-        [DataMember]
-        [DataField(FieldName = "LoginName", Size = 250
-            )]
+        [XmlElement("LoginName")]
         public virtual string LoginName { get; set; }
 
         [DataMember]
-        [DataField(FieldName = "Password", Size = 250
-            )]
+        [XmlElement("Password")]
         public virtual string Password { get; set; }
 
         [DataMember]
-        [DataField(FieldName = "UserRole")]
+        [XmlElement("UserRole")]
         public virtual int UserRole { get; set; }
 
         [DataMember]
-        [DataField(FieldName = "Name", Size = 250
-            )]
+        [XmlElement("Name")]
         public virtual string Name { get; set; }
 
         [DataMember]
-        [DataField(FieldName = "UserProfile")]
-        public virtual int UserProfile { get; set; }
+        [XmlElement("UserProfile")]
+        public virtual Int64 UserProfile { get; set; }
 
         [DataMember]
-        [DataField(FieldName = "WebTheme")]
+        [XmlElement("WebTheme")]
         public virtual int WebTheme { get; set; }
 
         [DataMember]
-        [DataField(FieldName = "Theme")]
-        public virtual string Theme { get; set; }
+        [XmlElement("Theme")]
+        public virtual int Theme { get; set; }
 
         [DataMember]
-        [DataField(FieldName = "IsActive")]
+        [XmlElement("IsActive")]
         public virtual bool IsActive { get; set; }
     }
 }

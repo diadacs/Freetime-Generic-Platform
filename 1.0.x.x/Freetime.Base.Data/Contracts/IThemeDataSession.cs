@@ -1,5 +1,8 @@
-﻿namespace Freetime.Base.Data.Contracts
+﻿using System.ServiceModel;
+
+namespace Freetime.Base.Data.Contracts
 {
+    [ServiceContract]
     public interface IThemeDataSession
     {
     }

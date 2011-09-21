@@ -7,9 +7,17 @@ namespace Freetime.Authentication
     public class FreetimeUser
     {
         private string m_defaultTheme = string.Empty;
+        
+        [DataMember]
         private readonly int m_userId = default(int);
+
+        [DataMember]
         private readonly int m_userRole = default(int);
+
+        [DataMember]
         private readonly bool m_isAuthorized = default(bool);
+
+        [DataMember]
         private readonly string m_name = string.Empty;
 
         [DataMember]
@@ -43,7 +51,6 @@ namespace Freetime.Authentication
         {
         }
 
-        [DataMember]
         public int UserId
         {
             get
@@ -52,7 +59,6 @@ namespace Freetime.Authentication
             }
         }
 
-        [DataMember]
         public int UserRole
         {
             get
@@ -61,7 +67,6 @@ namespace Freetime.Authentication
             }
         }
 
-        [DataMember]
         public bool IsAuthorized
         {
             get
@@ -70,7 +75,6 @@ namespace Freetime.Authentication
             }
         }
 
-        [DataMember]
         public string Name
         {
             get

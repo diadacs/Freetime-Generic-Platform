@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
 using System.Xml.Serialization;
+using System.Runtime.Serialization;
 
 namespace Freetime.Base.Data.Collection
 {
     [Serializable]
-    [XmlRoot("EventHandlers", 
-        Namespace = "http://www.freetime-businessplatform.com", 
-        IsNullable = false)]
+    [DataContract]
+    [XmlRoot("EventHandlers",
+        Namespace = "http://www.freeG-businessplatform.com",
+        IsNullable = true)]
     public class EventHandlerList : List<Entities.EventHandler>
     {
         
