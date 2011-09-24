@@ -20,7 +20,9 @@ namespace Test.Freetime.Base.Data
     [TestClass]
     public class LocalizationSessionTest
     {        
-
+        /// <summary>
+        /// Expected : Language Entity
+        /// </summary>
         [TestMethod]
         public void GetLanguage()
         {
@@ -46,6 +48,9 @@ namespace Test.Freetime.Base.Data
             Assert.AreEqual(language, expected);
         }
 
+        /// <summary>
+        /// Expected : ArgumentNullException
+        /// </summary>
         [TestMethod]
         public void GetLanguageThrowsArgumentNullException()
         {
