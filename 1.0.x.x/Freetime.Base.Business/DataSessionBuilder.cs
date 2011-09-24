@@ -44,7 +44,7 @@ namespace Freetime.Base.Business
             where TDataSession : IDataSession
         {
             if (Equals(defaultSession, null))
-                throw new Exception("Parameter defaultSession can't be null");
+                throw new ArgumentNullException("defaultSession");
             return DataSessionFactory.GetDataSession(defaultSession);
         }
         

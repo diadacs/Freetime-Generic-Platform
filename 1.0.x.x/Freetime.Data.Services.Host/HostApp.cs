@@ -49,7 +49,7 @@ namespace Freetime.Data.Services.Host
         {
             Service = new Service();
 
-            BasicHttpEndpoint = new BasicHttpEndpointHandle { Address = "http://192.168.175.190:8000/FreetimeDataServices" };
+            BasicHttpEndpoint = new BasicHttpEndpointHandle { Address = "http://192.168.175.123:8000/FreetimeDataServices" };
             
             Service.AddEndpointHandle(BasicHttpEndpoint);
             Service.Load();

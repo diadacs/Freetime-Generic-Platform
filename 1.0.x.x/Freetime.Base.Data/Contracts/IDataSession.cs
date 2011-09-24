@@ -9,5 +9,17 @@ namespace Freetime.Base.Data.Contracts
     {
         [OperationContract]
         void SetFreetimeUser(FreetimeUser user);
+
+        [OperationContract]
+        void BeginTransaction();
+
+        [OperationContract]
+        void CommitTransaction();
+
+        [OperationContract]
+        void RollbackTransaction();
+
+        [OperationContract]
+        void CancelTransaction();
     }
 }

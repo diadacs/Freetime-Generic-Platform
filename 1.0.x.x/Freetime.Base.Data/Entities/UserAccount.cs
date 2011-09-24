@@ -21,10 +21,6 @@ namespace Freetime.Base.Data.Entities
         public virtual string Password { get; set; }
 
         [DataMember]
-        [XmlElement("UserRole")]
-        public virtual int UserRole { get; set; }
-
-        [DataMember]
         [XmlElement("Name")]
         public virtual string Name { get; set; }
 

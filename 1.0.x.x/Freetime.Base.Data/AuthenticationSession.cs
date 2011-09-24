@@ -7,7 +7,7 @@ namespace Freetime.Base.Data
     {
         public UserAccount GetUserAccount(string username)
         {
-            return CurrentSession.GetT<UserAccount>(username);
+            return CurrentSession.GetT<UserAccount>( u => u.LoginName == username);
         }
     }
 }

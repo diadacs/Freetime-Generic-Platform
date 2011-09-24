@@ -8,7 +8,7 @@ namespace Freetime.Base.Business
 
         internal DataSessionFactory()
         {
-            UseDefaultDataSession = true;
+            UseDefaultDataSession = false;
         }
 
         TContract IDataSessionFactory.GetDataSession<TContract>() 
@@ -17,7 +17,7 @@ namespace Freetime.Base.Business
                 new ChannelFactory<TContract>(
                   new BasicHttpBinding(),
                   new EndpointAddress(
-                    string.Format("http://192.168.175.190:8000/FreetimeDataServices/{0}", typeof(TContract).Name)));
+                    string.Format("http://192.168.175.123:8000/FreetimeDataServices/{0}", typeof(TContract).Name)));
             var contract = httpFactory.CreateChannel();
             return contract;
         }

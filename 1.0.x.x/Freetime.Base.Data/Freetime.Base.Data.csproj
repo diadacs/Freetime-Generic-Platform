@@ -92,6 +92,7 @@
     <Compile Include="AuthenticationSession.cs" />
     <Compile Include="Collection\DataSessionServiceList.cs" />
     <Compile Include="Contracts\IAuthenticationSession.cs" />
+    <Compile Include="Contracts\ILocalizationSession.cs" />
     <Compile Include="Entities\Common\AuditableEntity.cs" />
     <Compile Include="Entities\Common\BaseEntity.cs" />
     <Compile Include="Collection\EventHandlerList.cs" />
@@ -104,8 +105,8 @@
     <Compile Include="Entities\DataSessionService.cs" />
     <Compile Include="Entities\EventHandler.cs" />
     <Compile Include="Entities\IDeletable.cs" />
+    <Compile Include="Entities\Language.cs" />
     <Compile Include="Entities\UserAccount.cs" />
-    <Compile Include="Entities\UserRole.cs" />
     <Compile Include="Entities\WebController.cs" />
     <Compile Include="Entities\BusinessLogic.cs" />
     <Compile Include="Entities\WebMasterPage.cs" />
@@ -117,7 +118,7 @@
     <Compile Include="Entities\IAuditable.cs" />
     <Compile Include="Contracts\IDataSession.cs" />
     <Compile Include="Entities\IPublishable.cs" />
-    <Compile Include="Contracts\IThemeDataSession.cs" />
+    <Compile Include="LocalizationSession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Common\PublishableEntity.cs" />
     <Compile Include="StoredProcedure.cs" />

@@ -55,9 +55,6 @@
     <Reference Include="Freetime.Authentication">
       <HintPath>..\bin\Debug\Freetime.Authentication.dll</HintPath>
     </Reference>
-    <Reference Include="Freetime.Base.Business">
-      <HintPath>..\bin\Debug\Freetime.Base.Business.dll</HintPath>
-    </Reference>
     <Reference Include="Freetime.Base.Data">
       <HintPath>..\bin\Debug\Freetime.Base.Data.dll</HintPath>
     </Reference>
@@ -257,6 +254,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="tekworc.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Freetime.Base.Business\Freetime.Base.Business.csproj">
+      <Project>{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1}</Project>
+      <Name>Freetime.Base.Business</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

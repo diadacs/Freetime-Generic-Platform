@@ -93,7 +93,7 @@ namespace Freetime.Base.Business
             args = new UserAuthenticationEventArgs(string.Empty); //TODO Supply Localized Message
             var user = new FreetimeUser(
                 (int) account.ID,
-                account.UserRole,
+                1,
                 account.Name,
                 true,
                 "FreetimeBlue"

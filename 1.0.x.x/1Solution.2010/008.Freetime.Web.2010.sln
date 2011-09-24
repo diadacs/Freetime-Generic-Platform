@@ -19,10 +19,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Data", "..\Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2010.Freetime.Web", "..\Freetime.Web\2010.Freetime.Web.csproj", "{6CF5CABE-D09C-4158-8319-04EFE5DA4687}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Base.Data.2010", "..\Unit.Testing\Test.Freetime.Base.Data\Test.Freetime.Base.Data.2010.csproj", "{DD7A929F-FA8E-485D-ABA0-77599158C6D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{465FA0CD-3140-408B-9782-0E937B720D22}"
+	ProjectSection(SolutionItems) = preProject
+		008.Freetime.Web.2010.vsmdi = 008.Freetime.Web.2010.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
 		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = 008.Freetime.Web.2010.vsmdi
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +57,10 @@ Global
 		{6CF5CABE-D09C-4158-8319-04EFE5DA4687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CF5CABE-D09C-4158-8319-04EFE5DA4687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CF5CABE-D09C-4158-8319-04EFE5DA4687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +70,7 @@ Global
 		{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1} = {FF15192C-F4F0-4EDA-AD29-511B6BBAD9E9}
 		{B4821622-B647-4997-9EC0-D4E0BC77F5F4} = {13741EFE-1606-4F5F-9F89-F515FACF7C8C}
 		{6CF5CABE-D09C-4158-8319-04EFE5DA4687} = {33C7267F-14F2-4306-8DE5-E3B05D53E023}
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8} = {9EA1E618-5870-4877-B942-C9C8E163C21C}
+		{465FA0CD-3140-408B-9782-0E937B720D22} = {9EA1E618-5870-4877-B942-C9C8E163C21C}
 	EndGlobalSection
 EndGlobal

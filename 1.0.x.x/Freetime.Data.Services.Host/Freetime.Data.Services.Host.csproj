@@ -54,6 +54,14 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Anito.Data, Version=1.0.1.7, Culture=neutral, PublicKeyToken=967ed64547aa0488, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Anito.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Anito.Data.SqlClient, Version=1.0.1.7, Culture=neutral, PublicKeyToken=967ed64547aa0488, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Anito.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="Freetime.Base.Data, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\Debug\Freetime.Base.Data.dll</HintPath>

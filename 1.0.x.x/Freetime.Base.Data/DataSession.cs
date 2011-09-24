@@ -27,7 +27,7 @@ namespace Freetime.Base.Data
             return session;
         }
 
-        public void SetFreetimeUser(FreetimeUser user)
+        public virtual void SetFreetimeUser(FreetimeUser user)
         {
             CurrentUser = user;
         }
@@ -36,5 +36,28 @@ namespace Freetime.Base.Data
         {
             m_anitoSession = null;
         }
+
+        #region Transaction
+        public virtual void BeginTransaction()
+        {
+            CurrentSession.BeginTransaction();
+        }
+
+        public virtual void CommitTransaction()
+        {
+            CurrentSession.CommitTransaction();
+        }
+
+        public virtual void RollbackTransaction()
+        {
+            CurrentSession.RollBackTransaction();
+        }
+
+        public virtual void CancelTransaction()
+        {
+            CurrentSession.CancelTransaction();
+        }
+        #endregion
+
     }
 }
