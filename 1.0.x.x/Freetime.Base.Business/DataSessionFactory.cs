@@ -8,7 +8,7 @@ namespace Freetime.Base.Business
 
         internal DataSessionFactory()
         {
-            UseDefaultDataSession = false;
+            UseDefaultDataSession = true;
         }
 
         TContract IDataSessionFactory.GetDataSession<TContract>() 
