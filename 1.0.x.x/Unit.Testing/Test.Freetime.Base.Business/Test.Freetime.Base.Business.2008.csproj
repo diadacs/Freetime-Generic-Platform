@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DD7A929F-FA8E-485D-ABA0-77599158C6D8}</ProjectGuid>
+    <ProjectGuid>{9DD23392-E06C-4228-909F-D7BB532C316D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test.Freetime.Base.Data</RootNamespace>
-    <AssemblyName>Test.Freetime.Base.Data</AssemblyName>
+    <RootNamespace>Test.Freetime.Base.Business</RootNamespace>
+    <AssemblyName>Test.Freetime.Base.Business</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Anito.Data">
-      <HintPath>..\..\Assemblies\Anito.Data.dll</HintPath>
+    <Reference Include="Freetime.Authentication, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\Freetime.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Freetime.Configuration, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\Freetime.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Freetime.GlobalHandling, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\Freetime.GlobalHandling.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -53,15 +62,21 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthenticationSessionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LocalizationSessionTest.cs" />
+    <Compile Include="AuthenticationLogicTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Freetime.Base.Business\Freetime.Base.Business.csproj">
+      <Project>{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1}</Project>
+      <Name>Freetime.Base.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Freetime.Base.Data\Freetime.Base.Data.csproj">
       <Project>{1646344E-9015-4204-AF7B-0DF1D42B3E24}</Project>
       <Name>Freetime.Base.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

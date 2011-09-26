@@ -35,7 +35,7 @@ namespace Test.Freetime.Base.Data
             Language language = new Language
             {
                 LanguageCode = languageCode,
-                ISOStandardCode = "en-US",
+                DisplayName = languageCode,
                 IsActive = true
             };
 
@@ -43,9 +43,9 @@ namespace Test.Freetime.Base.Data
 
             localizationSession.Protected().Setup<ISession>("CurrentSession").Returns(anitoSession.Object);
                       
-            var expected = localizationSession.Object.GetLanguage(languageCode);
+            var actual = localizationSession.Object.GetLanguage(languageCode);
 
-            Assert.AreEqual(language, expected);
+            Assert.AreEqual(language, actual);
         }
 
         /// <summary>
