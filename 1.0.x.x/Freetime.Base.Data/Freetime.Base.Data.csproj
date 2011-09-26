@@ -104,7 +104,6 @@
     <Compile Include="DataSession.cs" />
     <Compile Include="Entities\DataSessionService.cs" />
     <Compile Include="Entities\EventHandler.cs" />
-    <Compile Include="Entities\IDeletable.cs" />
     <Compile Include="Entities\Language.cs" />
     <Compile Include="Entities\UserAccount.cs" />
     <Compile Include="Entities\UserGroup.cs" />
