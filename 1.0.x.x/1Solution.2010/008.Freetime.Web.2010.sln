@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Base.Business.2010", "..\Unit.Testing\Test.Freetime.Base.Business\Test.Freetime.Base.Business.2010.csproj", "{9DD23392-E06C-4228-909F-D7BB532C316D}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -61,6 +63,10 @@ Global
 		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD23392-E06C-4228-909F-D7BB532C316D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD23392-E06C-4228-909F-D7BB532C316D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD23392-E06C-4228-909F-D7BB532C316D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD23392-E06C-4228-909F-D7BB532C316D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +78,6 @@ Global
 		{6CF5CABE-D09C-4158-8319-04EFE5DA4687} = {33C7267F-14F2-4306-8DE5-E3B05D53E023}
 		{DD7A929F-FA8E-485D-ABA0-77599158C6D8} = {9EA1E618-5870-4877-B942-C9C8E163C21C}
 		{465FA0CD-3140-408B-9782-0E937B720D22} = {9EA1E618-5870-4877-B942-C9C8E163C21C}
+		{9DD23392-E06C-4228-909F-D7BB532C316D} = {9EA1E618-5870-4877-B942-C9C8E163C21C}
 	EndGlobalSection
 EndGlobal

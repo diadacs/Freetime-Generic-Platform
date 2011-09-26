@@ -28,6 +28,9 @@ namespace Freetime.GlobalHandling
         static GlobalEventDispatcher()
         {
             m_eventContainer = new Dictionary<string, EventList>();
+
+            if (ConfigurationManager.FreetimeConfig == null) return;
+
             if (!string.IsNullOrEmpty(ConfigurationManager.FreetimeConfig.GlobalEventConfigurationSection))
                 LoadDefaultEventHandlers();
 

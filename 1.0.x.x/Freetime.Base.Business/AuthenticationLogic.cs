@@ -22,14 +22,15 @@ namespace Freetime.Base.Business
             }
 
         }
-        public bool SignInUser(string loginName,
+
+        public virtual bool SignInUser(string loginName,
             string password)
         {
             FreetimeUser user = null;
             return SignInUser(loginName, password, ref user);
         }
 
-        public bool SignInUser(string loginName,
+        public virtual bool SignInUser(string loginName,
             string password,
             string ipAddress)
         {
@@ -37,7 +38,7 @@ namespace Freetime.Base.Business
             return SignInUser(loginName, password, ipAddress, ref user);
         }
 
-        public bool SignInUser(string loginName,
+        public virtual bool SignInUser(string loginName,
             string password,
             ref FreetimeUser user)
         {
@@ -45,7 +46,7 @@ namespace Freetime.Base.Business
             return user != null;
         }
 
-        public bool SignInUser(string loginName,
+        public virtual bool SignInUser(string loginName,
             string password,
             string ipAddress,
             ref FreetimeUser user)
