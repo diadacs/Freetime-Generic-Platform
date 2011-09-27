@@ -1,21 +1,33 @@
-..Assembly/Project Heirarchy....
+Assembly Heirarchy
+-----------------------------------
 
-1. Freetime.BaseFramework
-2. Freetime.Base.Data
-3. Freetime.Configuration
-4. Freetime.PluginManagement
+Framework
+-----------------------------------
+01. Freetime.BaseFramework
+03. Freetime.Base.Authentication
+03. Freetime.Base.Data
 
-  Freetime.Data.Services
-  Freetime.Data.Services.Host
+Configuration and Plugin
+-----------------------------------
+04. Freetime.Configuration
+05. Freetime.PluginManagement
 
-5. Freetime.Base.Authentication
-6. Freetime.Base.GlobalHandling
-7. Freetime.Base.Business
+Proxy
+-----------------------------------
+06. Freetime.Data.Services
+07. Freetime.Data.Services.Host
 
-Web Specific
-8. Freetime.Web.Context
-9. Freetime.Web.Controller
-10. Freetime.Web.Routing
-11. Freetime.Web.View
-12. Freetime.Web
+Business Logic
+-----------------------------------
+08. Freetime.Base.GlobalHandling
+09. Freetime.Base.Business
+
+Web
+-----------------------------------
+10. Freetime.Web.Context
+11. Freetime.Web.Routing
+12. Freetime.Web.View
+13. Freetime.Web.Controller
+14. Freetime.Web
+
 
