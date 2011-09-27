@@ -60,6 +60,10 @@
     </Reference>
     <Reference Include="Freetime.Authentication, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL" />
     <Reference Include="Freetime.Base.Business, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL" />
+    <Reference Include="Freetime.Base.Component, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Debug\Freetime.Base.Component.dll</HintPath>
+    </Reference>
     <Reference Include="Freetime.Base.Data, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL" />
     <Reference Include="Freetime.Base.Framework, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL" />
     <Reference Include="Freetime.GlobalHandling, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL" />

@@ -55,6 +55,9 @@
     <Reference Include="Freetime.Authentication">
       <HintPath>..\bin\Debug\Freetime.Authentication.dll</HintPath>
     </Reference>
+    <Reference Include="Freetime.Base.Component">
+      <HintPath>..\bin\Debug\Freetime.Base.Component.dll</HintPath>
+    </Reference>
     <Reference Include="Freetime.Base.Data">
       <HintPath>..\bin\Debug\Freetime.Base.Data.dll</HintPath>
     </Reference>
