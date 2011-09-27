@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.GlobalHandling", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Configuration", "..\Freetime.Configuration\Freetime.Configuration.csproj", "{19DD2A49-451B-4300-BBA3-D3EE94C4104E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Configuration", "..\Unit.Testing\Test.Freetime.Configuration\Test.Freetime.Configuration.csproj", "{97060E41-A60C-4793-B838-F06BA8D353EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Configuration.2010", "..\Unit.Testing\Test.Freetime.Configuration\Test.Freetime.Configuration.2010.csproj", "{97060E41-A60C-4793-B838-F06BA8D353EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.GlobalHandling", "..\Unit.Testing\Test.Freetime.GlobalHandling\Test.Freetime.GlobalHandling.csproj", "{B40173E0-15C2-4608-85E9-413057C64F0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.GlobalHandling.2010", "..\Unit.Testing\Test.Freetime.GlobalHandling\Test.Freetime.GlobalHandling.2010.csproj", "{B40173E0-15C2-4608-85E9-413057C64F0D}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution

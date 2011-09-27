@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Business", ".
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.Unit.Test", "900.Unit.Test", "{D6864C54-A5D3-404F-BE40-E04DD595B0B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Base.Data.2010", "..\Unit.Testing\Test.Freetime.Base.Data\Test.Freetime.Base.Data.2010.csproj", "{DD7A929F-FA8E-485D-ABA0-77599158C6D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Base.Business.2010", "..\Unit.Testing\Test.Freetime.Base.Business\Test.Freetime.Base.Business.2010.csproj", "{9DD23392-E06C-4228-909F-D7BB532C316D}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -29,6 +33,14 @@ Global
 		{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD23392-E06C-4228-909F-D7BB532C316D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD23392-E06C-4228-909F-D7BB532C316D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD23392-E06C-4228-909F-D7BB532C316D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD23392-E06C-4228-909F-D7BB532C316D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1646344E-9015-4204-AF7B-0DF1D42B3E24} = {EECD6171-71C1-49BA-90C1-CC9490F7B39C}
 		{CF7EC13B-E324-455A-9A91-71CFCBEBD6C1} = {550EE444-7556-46FD-AF6E-465EA9FB6F59}
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8} = {D6864C54-A5D3-404F-BE40-E04DD595B0B3}
+		{9DD23392-E06C-4228-909F-D7BB532C316D} = {D6864C54-A5D3-404F-BE40-E04DD595B0B3}
 	EndGlobalSection
 EndGlobal

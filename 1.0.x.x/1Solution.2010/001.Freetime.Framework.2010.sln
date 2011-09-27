@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Authentication", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Base.Framework.2010", "..\Unit.Testing\Test.Freetime.Base.Framework\Test.Freetime.Base.Framework.2010.csproj", "{1892CB43-C162-48FE-97D6-79E7791EA4DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Authentication", "..\Unit.Testing\Test.Freetime.Authentication\Test.Freetime.Authentication.csproj", "{8F2AFF94-4F75-43C5-9F9D-D932DDB860F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Authentication.2010", "..\Unit.Testing\Test.Freetime.Authentication\Test.Freetime.Authentication.2010.csproj", "{8F2AFF94-4F75-43C5-9F9D-D932DDB860F1}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution

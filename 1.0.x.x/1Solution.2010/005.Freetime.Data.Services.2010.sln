@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.Data", "001.Data", "{73
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Data", "..\Freetime.Base.Data\Freetime.Base.Data.csproj", "{1646344E-9015-4204-AF7B-0DF1D42B3E24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Base.Data.2010", "..\Unit.Testing\Test.Freetime.Base.Data\Test.Freetime.Base.Data.2010.csproj", "{DD7A929F-FA8E-485D-ABA0-77599158C6D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Data.Services.2010", "..\Unit.Testing\Test.Freetime.Data.Services\Test.Freetime.Data.Services.2010.csproj", "{79ADE7B6-1DA7-4D31-8DE5-040F43566636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.DataServices.Host.2010", "..\Unit.Testing\Test.Freetime.DataServices.Host\Test.Freetime.DataServices.Host.2010.csproj", "{5B529221-7CD4-473B-BA70-C1FAA7C410C0}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -37,11 +43,26 @@ Global
 		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1646344E-9015-4204-AF7B-0DF1D42B3E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79ADE7B6-1DA7-4D31-8DE5-040F43566636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79ADE7B6-1DA7-4D31-8DE5-040F43566636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79ADE7B6-1DA7-4D31-8DE5-040F43566636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79ADE7B6-1DA7-4D31-8DE5-040F43566636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B529221-7CD4-473B-BA70-C1FAA7C410C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B529221-7CD4-473B-BA70-C1FAA7C410C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B529221-7CD4-473B-BA70-C1FAA7C410C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B529221-7CD4-473B-BA70-C1FAA7C410C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8} = {7BA80461-805D-4DB4-8D25-1873414489E3}
+		{79ADE7B6-1DA7-4D31-8DE5-040F43566636} = {7BA80461-805D-4DB4-8D25-1873414489E3}
+		{5B529221-7CD4-473B-BA70-C1FAA7C410C0} = {7BA80461-805D-4DB4-8D25-1873414489E3}
 		{7FE45FF9-F800-4475-9BEB-A7C4A0410903} = {7A252136-4954-4FEB-9B9E-EF1ED2F53B71}
 		{1E5C1C25-F1C6-4A32-A313-901254B772A4} = {01FEEDA6-A2F6-4305-A8BF-E83F50579BE9}
 		{1646344E-9015-4204-AF7B-0DF1D42B3E24} = {730AF711-50F2-4BD6-B233-ECA231A73C81}
