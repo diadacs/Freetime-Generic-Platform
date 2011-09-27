@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Freetime.Authentication
 {
@@ -18,7 +15,7 @@ namespace Freetime.Authentication
             }
         }
 
-        private static PermissionCollection GetPermission(string userCode)
+        public static PermissionCollection GetPermission(string userCode)
         {
             if (!UserPermissions.ContainsKey(userCode))
             { 
