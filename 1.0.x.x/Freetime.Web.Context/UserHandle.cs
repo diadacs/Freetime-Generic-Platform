@@ -25,7 +25,7 @@ namespace Freetime.Web.Context
                 if (HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] == null)
                 {
                     var freetimeUser = new FreetimeUser();
-                    freetimeUser.DefaultTheme = ConfigurationManager.FreetimeConfig.DefaultTheme;
+                    freetimeUser.DefaultTheme = ConfigurationManager.FreetimeConfiguration.DefaultTheme;
                     HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] = freetimeUser;
                 }
                 return HttpContext.Current.Session[FREETIME_USER_SESSION_KEY] as FreetimeUser;       

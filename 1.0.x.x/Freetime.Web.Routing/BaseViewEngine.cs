@@ -30,7 +30,7 @@ namespace Freetime.Web.Routing
         {
             //Site.Master as default
             if (string.IsNullOrEmpty(masterName))
-                masterName = ConfigurationManager.FreetimeConfig.DefaultMasterPage;
+                masterName = ConfigurationManager.FreetimeConfiguration.DefaultMasterPage;
 
             if (controllerContext == null)
                 throw new ArgumentNullException("controllerContext");
