@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Moq.Protected;
 using Freetime.Base.Data.Entities;
 using Freetime.Base.Data.Contracts;
 using Freetime.Base.Business;
-using Freetime.GlobalHandling;
 using Freetime.Authentication;
 
 namespace Test.Freetime.Base.Business
@@ -34,7 +29,7 @@ namespace Test.Freetime.Base.Business
         }
 
         [TestMethod]
-        public void TestSignInUserByUserPasswordIP()
+        public void TestSignInUserByUserPasswordIp()
         {
             var logic = GetLogic();
 
@@ -54,7 +49,7 @@ namespace Test.Freetime.Base.Business
         }
 
         [TestMethod]
-        public void TestSignInUserByUserPasswordIPRefUser()
+        public void TestSignInUserByUserPasswordIpRefUser()
         {
             var logic = GetLogic();
             FreetimeUser user = null;
@@ -67,7 +62,7 @@ namespace Test.Freetime.Base.Business
         [TestMethod]
         public void TestSignInUserUserNullUserNameThrowsArgumentNullException()
         {
-            AuthenticationLogic logic = new AuthenticationLogic();
+            var logic = new AuthenticationLogic();
 
             Exception exception = null;
             try
@@ -81,14 +76,14 @@ namespace Test.Freetime.Base.Business
 
             Assert.IsNotNull(exception);
 
-            Assert.AreEqual<Type>(
+            Assert.AreEqual(
                typeof(ArgumentNullException), exception.GetType());
         }
 
         [TestMethod]
         public void TestSignInUserUserNullPasswordThrowsArgumentNullException()
         {
-            AuthenticationLogic logic = new AuthenticationLogic();
+            var logic = new AuthenticationLogic();
 
             Exception exception = null;
             try
@@ -102,15 +97,15 @@ namespace Test.Freetime.Base.Business
 
             Assert.IsNotNull(exception);
 
-            Assert.AreEqual<Type>(
+            Assert.AreEqual(
                typeof(ArgumentNullException), exception.GetType());
         }
 
         private AuthenticationLogic GetLogic()
         {
-            Mock<IAuthenticationSession> authenticationSession = new Mock<IAuthenticationSession>();
+            var authenticationSession = new Mock<IAuthenticationSession>();
 
-            UserAccount userAccount = new UserAccount
+            var userAccount = new UserAccount
             {
                 LoginName = "admin",
                 Password = "X03MO1qnZdYdgyfeuILPmQ==",
@@ -124,7 +119,7 @@ namespace Test.Freetime.Base.Business
             authenticationSession.Setup(x => x.GetUserAccount("admin")).Returns(userAccount);
 
 
-            Mock<AuthenticationLogic> authenticationLogic = new Mock<AuthenticationLogic> { CallBase = true };
+            var authenticationLogic = new Mock<AuthenticationLogic> { CallBase = true };
             authenticationLogic.Protected().Setup<IAuthenticationSession>("CurrentSession").Returns(authenticationSession.Object);
 
             return authenticationLogic.Object;

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -27,7 +24,7 @@ namespace Test.Freetime.Base.Data
         [TestMethod]
         public void GetUserAccount()
         {
-            UserAccount userAccount = new UserAccount { 
+            var userAccount = new UserAccount { 
                 LoginName = "freetime@freetime-G.com",
                 Password = "password",
                 Name = "Freetime Admin",
@@ -36,11 +33,11 @@ namespace Test.Freetime.Base.Data
                 Theme = 0,
                 IsActive = true                    
             };
-            Mock<AuthenticationSession> authenticationSession = new Mock<AuthenticationSession> { CallBase = true };
+            var authenticationSession = new Mock<AuthenticationSession> { CallBase = true };
 
-            Mock<ISession> anitoSession = new Mock<ISession> { CallBase = true };
+            var anitoSession = new Mock<ISession> { CallBase = true };
 
-            anitoSession.Setup(x => x.GetT<UserAccount>(It.IsAny<Expression<Func<UserAccount, bool>>>())).Returns(userAccount);
+            anitoSession.Setup(x => x.GetT(It.IsAny<Expression<Func<UserAccount, bool>>>())).Returns(userAccount);
 
             authenticationSession.Protected().Setup<ISession>("CurrentSession").Returns(anitoSession.Object);
 
@@ -55,7 +52,7 @@ namespace Test.Freetime.Base.Data
         [TestMethod]
         public void GetUserAccountThrowsArgumentNullException()
         {
-            AuthenticationSession target = new AuthenticationSession();
+            var target = new AuthenticationSession();
             Exception exception = null;
 
             try
@@ -69,7 +66,7 @@ namespace Test.Freetime.Base.Data
 
             Assert.IsNotNull(exception);
 
-            Assert.AreEqual<Type>(
+            Assert.AreEqual(
                typeof(ArgumentNullException), exception.GetType());
 
         }
