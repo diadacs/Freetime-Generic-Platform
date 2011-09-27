@@ -93,7 +93,7 @@ namespace Freetime.PluginManagement
         {
             if (!Controllers.ContainsKey(controllerName))
             {
-                var webController = m_controllerList.First(x => x.Name == controllerName);
+                var webController = m_controllerList.FirstOrDefault(x => x.Name == controllerName);
                 if (webController != null)
                 {
                     if (!webController.IsActive)
@@ -135,7 +135,7 @@ namespace Freetime.PluginManagement
 
         public WebView GetWebView(string viewName)
         {
-            return m_viewList.First(x => x.Name == viewName && x.IsActive);
+            return m_viewList.FirstOrDefault(x => x.Name == viewName && x.IsActive);
         }
 
         private void LoadWebViews(string sourceXml)
@@ -166,7 +166,7 @@ namespace Freetime.PluginManagement
 
         public WebPartialView GetPartialView(string partialViewName)
         {
-            return m_partialViewList.First(x => x.Name == partialViewName);
+            return m_partialViewList.FirstOrDefault(x => x.Name == partialViewName);
         }
 
         private void LoadWebPartialViews(string sourceXml)
@@ -197,7 +197,7 @@ namespace Freetime.PluginManagement
 
         public WebMasterPage GetWebMasterPage(string masterPageName)
         {
-            return m_masterPageList.First(x => x.Name == masterPageName && x.IsActive);
+            return m_masterPageList.FirstOrDefault(x => x.Name == masterPageName && x.IsActive);
         }
 
         private void LoadWebMasterPages(string sourceXml)

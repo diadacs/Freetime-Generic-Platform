@@ -76,7 +76,8 @@
     <Reference Include="Freetime.Web.Controller">
       <HintPath>..\bin\Debug\Freetime.Web.Controller.dll</HintPath>
     </Reference>
-    <Reference Include="Freetime.Web.Routing">
+    <Reference Include="Freetime.Web.Routing, Version=1.0.1.1, Culture=neutral, PublicKeyToken=b86d1ba90a0e7353, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\Debug\Freetime.Web.Routing.dll</HintPath>
     </Reference>
     <Reference Include="Freetime.Web.View">

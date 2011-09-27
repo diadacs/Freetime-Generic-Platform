@@ -3,23 +3,23 @@ Assembly Heirarchy
 
 Framework
 -----------------------------------
-01. Freetime.BaseFramework
+01. Freetime.Base.Framework
 03. Freetime.Base.Authentication
 03. Freetime.Base.Data
 
 Configuration and Plugin
 -----------------------------------
 04. Freetime.Configuration
-05. Freetime.PluginManagement
+05. Freetime.Base.GlobalHandling
+06. Freetime.PluginManagement
 
 Proxy
 -----------------------------------
-06. Freetime.Data.Services
-07. Freetime.Data.Services.Host
+07. Freetime.Data.Services
+08. Freetime.Data.Services.Host
 
 Business Logic
 -----------------------------------
-08. Freetime.Base.GlobalHandling
 09. Freetime.Base.Business
 
 Web
