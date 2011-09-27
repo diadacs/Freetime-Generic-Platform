@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Data", "..\Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Base.Framework", "..\Freetime.Base.Framework\Freetime.Base.Framework.csproj", "{51773990-AB84-45E5-BFF2-50F0B422D380}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Base.Framework.2010", "..\Unit.Testing\Test.Freetime.Base.Framework\Test.Freetime.Base.Framework.2010.csproj", "{1892CB43-C162-48FE-97D6-79E7791EA4DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Base.Data.2010", "..\Unit.Testing\Test.Freetime.Base.Data\Test.Freetime.Base.Data.2010.csproj", "{DD7A929F-FA8E-485D-ABA0-77599158C6D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.PluginManagement", "..\Unit.Testing\Test.Freetime.PluginManagement\Test.Freetime.PluginManagement.csproj", "{F5914FD4-1B74-45F8-A82E-C4F88A8DC4D0}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -37,12 +43,27 @@ Global
 		{51773990-AB84-45E5-BFF2-50F0B422D380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51773990-AB84-45E5-BFF2-50F0B422D380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51773990-AB84-45E5-BFF2-50F0B422D380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1892CB43-C162-48FE-97D6-79E7791EA4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1892CB43-C162-48FE-97D6-79E7791EA4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1892CB43-C162-48FE-97D6-79E7791EA4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1892CB43-C162-48FE-97D6-79E7791EA4DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5914FD4-1B74-45F8-A82E-C4F88A8DC4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5914FD4-1B74-45F8-A82E-C4F88A8DC4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5914FD4-1B74-45F8-A82E-C4F88A8DC4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5914FD4-1B74-45F8-A82E-C4F88A8DC4D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3F0BDDBD-CA2B-494E-B238-87C0F0968DA0} = {7C57D791-54F9-4335-B212-F88D643C77AB}
+		{1892CB43-C162-48FE-97D6-79E7791EA4DF} = {09A93313-A6E3-49F5-B54C-42D8249C6AB1}
+		{DD7A929F-FA8E-485D-ABA0-77599158C6D8} = {09A93313-A6E3-49F5-B54C-42D8249C6AB1}
+		{F5914FD4-1B74-45F8-A82E-C4F88A8DC4D0} = {09A93313-A6E3-49F5-B54C-42D8249C6AB1}
 		{1646344E-9015-4204-AF7B-0DF1D42B3E24} = {F277E4F7-EFF9-4633-B450-4A49B23A0A2F}
 		{51773990-AB84-45E5-BFF2-50F0B422D380} = {9E516659-9DD1-475A-A893-9C8811940FC8}
 	EndGlobalSection
