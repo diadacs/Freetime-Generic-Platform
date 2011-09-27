@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Freetime.GlobalHandling
 {
@@ -16,7 +14,7 @@ namespace Freetime.GlobalHandling
 
         public void Invoke(object sender, EventArgs e)
         {
-            foreach (GlobalEvent gevent in this)
+            foreach (var gevent in this)
                 gevent.Invoke(sender, e);
         }
     }

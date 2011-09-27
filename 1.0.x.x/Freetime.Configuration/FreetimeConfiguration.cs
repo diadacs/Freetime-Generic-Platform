@@ -1,12 +1,9 @@
-﻿using System;
-using System.Data;
-using System.Configuration;
-using System.Linq;
-using System.Web;
+﻿using System.Configuration;
+
 
 namespace Freetime.Configuration
 {
-    public class FreetimeConfiguration : System.Configuration.ConfigurationSection
+    public class FreetimeConfiguration : ConfigurationSection
     {
         [ConfigurationProperty("DefaultTheme", IsRequired = false)]
         public string DefaultTheme

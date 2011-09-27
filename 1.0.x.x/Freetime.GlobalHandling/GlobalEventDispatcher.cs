@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
-using System.Xml.Serialization;
 using System.Reflection;
-using Freetime.Base.Data;
 using Freetime.Base.Data.Collection;
 using Freetime.Configuration;
 
@@ -14,24 +9,24 @@ namespace Freetime.GlobalHandling
     public static class GlobalEventDispatcher
     {
                 
-        private static Dictionary<string, EventList> m_eventContainer = null;
+        private readonly static Dictionary<string, EventList> s_eventContainer;
         
         private static Dictionary<string, EventList> EventContainer
         {
             get
             {
-                return m_eventContainer;
+                return s_eventContainer;
             }
         }
 
         
         static GlobalEventDispatcher()
         {
-            m_eventContainer = new Dictionary<string, EventList>();
+            s_eventContainer = new Dictionary<string, EventList>();
 
-            if (ConfigurationManager.FreetimeConfig == null) return;
+            if (ConfigurationManager.FreetimeConfiguration == null) return;
 
-            if (!string.IsNullOrEmpty(ConfigurationManager.FreetimeConfig.GlobalEventConfigurationSection))
+            if (!string.IsNullOrEmpty(ConfigurationManager.FreetimeConfiguration.GlobalEventConfigurationSection))
                 LoadDefaultEventHandlers();
 
         }
@@ -40,8 +35,7 @@ namespace Freetime.GlobalHandling
         {
             if (!EventContainer.ContainsKey(eventName))
             {
-                EventList list = new EventList(eventName);
-                list.Add(handler);
+                var list = new EventList(eventName){handler};
                 EventContainer.Add(eventName, list);
             }
             else
@@ -73,9 +67,9 @@ namespace Freetime.GlobalHandling
         //Load Event Handlers from a section in a config file
         private static void LoadDefaultEventHandlers()
         {
-            var config = System.Configuration.ConfigurationManager.GetSection(ConfigurationManager.FreetimeConfig.GlobalEventConfigurationSection);
+            var config = System.Configuration.ConfigurationManager.GetSection(ConfigurationManager.FreetimeConfiguration.GlobalEventConfigurationSection);
             if (config == null)
-                throw new Exception(string.Format("Config Section {0} not implemented", ConfigurationManager.FreetimeConfig.GlobalEventConfigurationSection));
+                throw new Exception(string.Format("Config Section {0} not implemented", ConfigurationManager.FreetimeConfiguration.GlobalEventConfigurationSection));
             LoadEventHandlers(config as GlobalEventConfiguration);
         }
 
