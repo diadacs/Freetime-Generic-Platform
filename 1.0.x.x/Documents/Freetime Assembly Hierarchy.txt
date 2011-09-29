@@ -22,9 +22,12 @@ Business Logic
 -----------------------------------
 09. Freetime.Base.Business
 
-Web
+Component
 -----------------------------------
 10. Freetime.Base.Component
+
+Web
+-----------------------------------
 11. Freetime.Web.Context
 12. Freetime.Web.Routing
 13. Freetime.Web.View
