@@ -24,10 +24,11 @@ Business Logic
 
 Web
 -----------------------------------
-10. Freetime.Web.Context
-11. Freetime.Web.Routing
-12. Freetime.Web.View
-13. Freetime.Web.Controller
-14. Freetime.Web
+10. Freetime.Base.Component
+11. Freetime.Web.Context
+12. Freetime.Web.Routing
+13. Freetime.Web.View
+14. Freetime.Web.Controller
+15. Freetime.Web
 
 
