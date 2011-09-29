@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DD7A929F-FA8E-485D-ABA0-77599158C6D8}</ProjectGuid>
+    <ProjectGuid>{1892CB43-C162-48FE-97D6-79E7791EA4DF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test.Freetime.Base.Data</RootNamespace>
-    <AssemblyName>Test.Freetime.Base.Data</AssemblyName>
+    <RootNamespace>Test.Freetime.Base.Framework</RootNamespace>
+    <AssemblyName>Test.Freetime.Base.Framework</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -32,15 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Anito.Data">
-      <HintPath>..\..\Assemblies\Anito.Data.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Moq">
-      <HintPath>..\..\Assemblies\Moq.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -53,14 +47,13 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthenticationSessionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LocalizationSessionTest.cs" />
+    <Compile Include="CryptoTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Freetime.Base.Data\Freetime.Base.Data.csproj">
-      <Project>{1646344E-9015-4204-AF7B-0DF1D42B3E24}</Project>
-      <Name>Freetime.Base.Data</Name>
+    <ProjectReference Include="..\..\Freetime.Base.Framework\Freetime.Base.Framework.csproj">
+      <Project>{51773990-AB84-45E5-BFF2-50F0B422D380}</Project>
+      <Name>Freetime.Base.Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
