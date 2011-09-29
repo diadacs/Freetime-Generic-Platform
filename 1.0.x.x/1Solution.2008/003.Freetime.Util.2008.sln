@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Event.Handling", "002.E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "900.Unit.Test", "900.Unit.Test", "{5BFCA74C-A705-4D70-9693-E3A9F39B51BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Configuration.2008", "..\Unit.Testing\Test.Freetime.Configuration\Test.Freetime.Configuration.2008.csproj", "{97060E41-A60C-4793-B838-F06BA8D353EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.GlobalHandling.2008", "..\Unit.Testing\Test.Freetime.GlobalHandling\Test.Freetime.GlobalHandling.2008.csproj", "{B40173E0-15C2-4608-85E9-413057C64F0D}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -29,6 +33,14 @@ Global
 		{19DD2A49-451B-4300-BBA3-D3EE94C4104E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19DD2A49-451B-4300-BBA3-D3EE94C4104E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19DD2A49-451B-4300-BBA3-D3EE94C4104E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97060E41-A60C-4793-B838-F06BA8D353EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97060E41-A60C-4793-B838-F06BA8D353EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97060E41-A60C-4793-B838-F06BA8D353EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97060E41-A60C-4793-B838-F06BA8D353EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40173E0-15C2-4608-85E9-413057C64F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40173E0-15C2-4608-85E9-413057C64F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40173E0-15C2-4608-85E9-413057C64F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40173E0-15C2-4608-85E9-413057C64F0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3E5A9C77-1917-4CE3-B87C-DB75F5BA7F51} = {0889F22E-3C69-479A-8F88-4D9C7CCA2715}
 		{19DD2A49-451B-4300-BBA3-D3EE94C4104E} = {7885B126-5301-4831-9DF6-F8857BCCB4FC}
+		{97060E41-A60C-4793-B838-F06BA8D353EA} = {5BFCA74C-A705-4D70-9693-E3A9F39B51BE}
+		{B40173E0-15C2-4608-85E9-413057C64F0D} = {5BFCA74C-A705-4D70-9693-E3A9F39B51BE}
 	EndGlobalSection
 EndGlobal
