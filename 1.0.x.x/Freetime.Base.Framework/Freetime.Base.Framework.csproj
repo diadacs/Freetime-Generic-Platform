@@ -81,7 +81,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crypto.cs" />
-    <Compile Include="Diagnostics\LogUtil.cs" />
+    <Compile Include="Diagnostics\DebugUtil.cs" />
+    <Compile Include="Diagnostics\TraceUtil.cs" />
     <Compile Include="INameable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

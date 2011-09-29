@@ -6,6 +6,9 @@ namespace Freetime.Base.Framework
     {
         private static MD5CryptoServiceProvider s_md5ServiceProvider;
         
+        /// <summary>
+        /// MD5CryptoServiceProvider
+        /// </summary>
         public static MD5CryptoServiceProvider Md5CryptoServiceProvider
         {
             get
