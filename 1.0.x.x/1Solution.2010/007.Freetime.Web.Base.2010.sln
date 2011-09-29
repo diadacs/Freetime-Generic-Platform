@@ -23,6 +23,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "004.Authorization", "004.Au
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freetime.Web.Authorization", "..\Freetime.Web.Authorization\Freetime.Web.Authorization.csproj", "{DB21F724-2C1C-4615-920B-9DB51670B345}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Web.Context.2010", "..\Unit.Testing\Test.Freetime.Web.Context\Test.Freetime.Web.Context.2010.csproj", "{51B24B66-464B-4638-9B0A-9FB4855EDCA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Web.Routing.2010", "..\Unit.Testing\Test.Freetime.Web.Routing\Test.Freetime.Web.Routing.2010.csproj", "{46682108-1E79-49C4-93FE-2CDA26D8D7CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Web.View", "..\Unit.Testing\Test.Freetime.Web.View\Test.Freetime.Web.View.csproj", "{D576CDDF-33C5-4746-89C0-6A21D92BE329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Web.Authorization.2010", "..\Unit.Testing\Test.Freetime.Web.Authorization\Test.Freetime.Web.Authorization.2010.csproj", "{3D0C32BC-CEF3-43BB-B101-F7CCC24D3AB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8929F575-F13C-46AA-9EFA-7B5E9355F664}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Freetime.Web.Controller", "..\Unit.Testing\Test.Freetime.Web.Controller\Test.Freetime.Web.Controller.csproj", "{B602EF23-C776-4452-86AE-8573EE897C89}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -53,6 +69,26 @@ Global
 		{DB21F724-2C1C-4615-920B-9DB51670B345}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB21F724-2C1C-4615-920B-9DB51670B345}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB21F724-2C1C-4615-920B-9DB51670B345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B24B66-464B-4638-9B0A-9FB4855EDCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B24B66-464B-4638-9B0A-9FB4855EDCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B24B66-464B-4638-9B0A-9FB4855EDCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B24B66-464B-4638-9B0A-9FB4855EDCA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46682108-1E79-49C4-93FE-2CDA26D8D7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46682108-1E79-49C4-93FE-2CDA26D8D7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46682108-1E79-49C4-93FE-2CDA26D8D7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46682108-1E79-49C4-93FE-2CDA26D8D7CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D576CDDF-33C5-4746-89C0-6A21D92BE329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D576CDDF-33C5-4746-89C0-6A21D92BE329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D576CDDF-33C5-4746-89C0-6A21D92BE329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D576CDDF-33C5-4746-89C0-6A21D92BE329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0C32BC-CEF3-43BB-B101-F7CCC24D3AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0C32BC-CEF3-43BB-B101-F7CCC24D3AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0C32BC-CEF3-43BB-B101-F7CCC24D3AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0C32BC-CEF3-43BB-B101-F7CCC24D3AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B602EF23-C776-4452-86AE-8573EE897C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B602EF23-C776-4452-86AE-8573EE897C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B602EF23-C776-4452-86AE-8573EE897C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B602EF23-C776-4452-86AE-8573EE897C89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +98,12 @@ Global
 		{FF73BEE2-10B9-4278-B5BF-24681B422A2B} = {EEFB11D1-2FB5-45DE-948B-63AFF182DE72}
 		{CBFF08B3-E2A2-4B05-ABD0-3B208E4E3DF4} = {E9C6EFC7-8998-474D-B566-F61A1AEBE844}
 		{B4821622-B647-4997-9EC0-D4E0BC77F5F4} = {4D16BC9D-EB6C-4E97-B2E8-3C219B318229}
+		{51B24B66-464B-4638-9B0A-9FB4855EDCA6} = {1C0CDA05-34F3-4147-8444-85AB85C6A15B}
+		{46682108-1E79-49C4-93FE-2CDA26D8D7CB} = {1C0CDA05-34F3-4147-8444-85AB85C6A15B}
+		{D576CDDF-33C5-4746-89C0-6A21D92BE329} = {1C0CDA05-34F3-4147-8444-85AB85C6A15B}
+		{3D0C32BC-CEF3-43BB-B101-F7CCC24D3AB7} = {1C0CDA05-34F3-4147-8444-85AB85C6A15B}
+		{8929F575-F13C-46AA-9EFA-7B5E9355F664} = {1C0CDA05-34F3-4147-8444-85AB85C6A15B}
+		{B602EF23-C776-4452-86AE-8573EE897C89} = {1C0CDA05-34F3-4147-8444-85AB85C6A15B}
 		{DB21F724-2C1C-4615-920B-9DB51670B345} = {63DB2D6E-9743-4265-8BFA-C1F75D143F87}
 	EndGlobalSection
 EndGlobal
