@@ -97,11 +97,6 @@ namespace Freetime.Web.Controller
             return typeof(TLogic).IsAssignableFrom(logicType);
         }
 
-        
-        
-            
-            
-        
     }
 
     public abstract class BaseController : BaseController<ISharedLogic>

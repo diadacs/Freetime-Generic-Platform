@@ -10,7 +10,7 @@ namespace Freetime.Base.Data.Entities
     [XmlRoot("Language",
         Namespace = "http://www.freetime-generic.com",
         IsNullable = true)]
-    public class Language
+    public class Language : AuditableEntity
     {
        
         [DataMember]
