@@ -8,7 +8,7 @@ namespace Freetime.Base.Data.Collection
     [Serializable]
     [DataContract]
     [XmlRoot("MasterPages",
-        Namespace = "http://www.freeG-businessplatform.com",
+        Namespace = "http://www.freetime-generic.com",
         IsNullable = true)]
     public class WebMasterPageList : List<Entities.WebMasterPage>
     {

@@ -257,6 +257,7 @@
     <Folder Include="Themes\FreetimeBlue\scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Config\BusinessLogics.config" />
     <None Include="tekworc.snk" />
   </ItemGroup>
   <ItemGroup>

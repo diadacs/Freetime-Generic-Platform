@@ -65,12 +65,14 @@ namespace Freetime.PluginManagement
                     LoadWebControllers(attribute.Value);
                 else if (attribute.Key == "WebViewsConfig")
                     LoadWebViews(attribute.Value);
-                else if(attribute.Key == "WebPartialViewsConfig")
+                else if (attribute.Key == "WebPartialViewsConfig")
                     LoadWebPartialViews(attribute.Value);
                 else if (attribute.Key == "MasterPagesConfig")
                     LoadWebMasterPages(attribute.Value);
                 else if (attribute.Key == "DataServiceConfig")
-                    LoadDataSessionServices(attribute.Value);                
+                    LoadDataSessionServices(attribute.Value);
+                else if (attribute.Key == "BusinessLogicsConfig")
+                    LoadBusinessLogics(attribute.Value);
             }
         }
 
@@ -218,6 +220,45 @@ namespace Freetime.PluginManagement
             finally
             {
                 if(stream != null)
+                    stream.Close();
+            }
+        }
+        #endregion
+
+        #region BusinessLogic
+        private BusinessLogicList m_businessLogicList;
+
+
+        public BusinessLogic GetBusinessLogic(string logicName)
+        {
+            return m_businessLogicList.FirstOrDefault(x => x.Type == logicName && x.IsActive);
+        }
+        public BusinessLogic GetBusinessLogic(Type logicType)
+        {
+            if (logicType == null)
+                throw new ArgumentNullException("logicType");
+            return GetBusinessLogic(logicType.FullName);
+        }
+
+
+        private void LoadBusinessLogics(string sourceXml)
+        {
+            m_businessLogicList = GetBusinessLogicList(sourceXml);
+        }
+
+        private BusinessLogicList GetBusinessLogicList(string xmlsource)
+        {
+            Stream stream = null;
+            try
+            {
+                var serializer = new XmlSerializer(typeof(BusinessLogicList));
+                stream = new FileStream(xmlsource, FileMode.Open);
+                var list = serializer.Deserialize(stream) as BusinessLogicList;
+                return list;
+            }
+            finally
+            {
+                if (stream != null)
                     stream.Close();
             }
         }

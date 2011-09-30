@@ -8,7 +8,7 @@ namespace Freetime.Base.Data.Entities
     [DataContract]
     [Serializable]
     [XmlRoot("Language",
-        Namespace = "http://www.freeG-businessplatform.com",
+        Namespace = "http://www.freetime-generic.com",
         IsNullable = true)]
     public class Language
     {

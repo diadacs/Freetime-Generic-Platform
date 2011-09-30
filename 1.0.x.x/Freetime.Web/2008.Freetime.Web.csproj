@@ -246,6 +246,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Config\BusinessLogics.config" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Admin\" />
     <Folder Include="App_Data\" />
     <Folder Include="Themes\BlackTabs\scripts\" />

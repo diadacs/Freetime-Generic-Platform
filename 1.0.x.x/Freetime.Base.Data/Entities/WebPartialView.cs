@@ -7,7 +7,7 @@ namespace Freetime.Base.Data.Entities
     [Serializable]
     [DataContract]
     [XmlRoot("WebPartialView",
-        Namespace = "http://www.freeG-businessplatform.com",
+        Namespace = "http://www.freetime-generic.com",
         IsNullable = true)]
     public class WebPartialView
     {

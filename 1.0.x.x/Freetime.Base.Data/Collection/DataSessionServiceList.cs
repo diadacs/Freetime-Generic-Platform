@@ -9,7 +9,7 @@ namespace Freetime.Base.Data.Collection
     [Serializable]
     [DataContract]
     [XmlRoot("Services",
-        Namespace = "http://www.freeG-businessplatform.com",
+        Namespace = "http://www.freetime-generic.com",
         IsNullable = true)]
     public class DataSessionServiceList : List<DataSessionService>
     {

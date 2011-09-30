@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthenticationSession.cs" />
+    <Compile Include="Collection\BusinessLogicList.cs" />
     <Compile Include="Collection\DataSessionServiceList.cs" />
     <Compile Include="Contracts\IAuthenticationSession.cs" />
     <Compile Include="Contracts\ILocalizationSession.cs" />

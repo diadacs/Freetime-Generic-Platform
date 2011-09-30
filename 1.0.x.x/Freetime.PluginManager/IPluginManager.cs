@@ -13,6 +13,9 @@ namespace Freetime.PluginManagement
         WebPartialView GetPartialView(string partialViewName);
         WebMasterPage GetWebMasterPage(string masterPageName);
 
+        BusinessLogic GetBusinessLogic(string logicName);
+        BusinessLogic GetBusinessLogic(Type logicType);
+
         DataSessionServiceList GetDataSessionServices();
 
     }

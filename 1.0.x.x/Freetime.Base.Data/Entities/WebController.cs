@@ -7,7 +7,7 @@ namespace Freetime.Base.Data.Entities
     [Serializable]
     [DataContract]
     [XmlRoot("WebController",
-        Namespace = "http://www.freeG-businessplatform.com",
+        Namespace = "http://www.freetime-generic.com",
         IsNullable = true)]
     public class WebController
     {
